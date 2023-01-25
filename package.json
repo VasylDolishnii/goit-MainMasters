@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://vasyldolishnii.github.io/goit-MainMasters/"
+    "url": "git+https://github.com/migace/parcel-project-template-pl-main.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://vasyldolishnii.github.io/goit-MainMasters/"
+    "url": "https://github.com/migace/parcel-project-template-pl-main/issues"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
