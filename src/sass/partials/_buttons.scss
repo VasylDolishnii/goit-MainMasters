@@ -1,6 +1,6 @@
 .button {
   font-size: 8px;
-  background-color: #fff;
+  background-color: $IColor;
   border: 0;
   border-radius: 20px;
   padding: 7px 14px;
@@ -13,20 +13,20 @@
   }
 
   &__red {
-    background-color: #d41443;
-    color: #fff;
+    background-color: $btnColor;
+    color: $IColor;
 
     & svg {
-      fill: white;
+      fill: $IColor;
     }
   }
 
   &__white {
-    background-color: #fff;
-    color: #d41443;
+    background-color: $IColor;
+    color: $btnColor;
 
     & svg {
-      fill: #d41443;
+      fill: $btnColor;
     }
   }
 
@@ -39,7 +39,7 @@
     background: url(../images/button-arrow.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #fff;
+    background-color: $IColor;
     width: 40px;
     height: 40px;
   }
