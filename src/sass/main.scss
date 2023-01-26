@@ -7,7 +7,6 @@ body {
   color: $IIColor;
   background-color: $IColor;
   font-size: 14px;
-  letter-spacing: 0.03em;
 }
 
 h1,
@@ -42,7 +41,7 @@ a {
 
 .container {
   width: 100%;
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
 
   @media screen and (min-width: 480px) {
