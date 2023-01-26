@@ -5,6 +5,14 @@ body {
   background-color: grey;
 }
 
+.test {
+  padding: 0 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
 .button {
   // Style to delete after add global styles
   font-family: 'DM Sans', sans-serif;
@@ -20,14 +28,11 @@ body {
   justify-content: center;
   align-items: center;
 
-  & div {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  &__span--arrow {
+    padding-right: 15px;
   }
 
-  &-red {
+  &__red {
     background-color: #d41443;
     color: #fff;
 
@@ -36,7 +41,7 @@ body {
     }
   }
 
-  &-white {
+  &__white {
     background-color: #fff;
     color: #d41443;
 
@@ -45,7 +50,7 @@ body {
     }
   }
 
-  &-arrow {
+  &__arrow {
     background: url(../images/button-arrow.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -54,31 +59,28 @@ body {
     height: 40px;
   }
 
-  &-menu {
+  &__menu {
     background-color: #fff;
     color: #d41443;
     font-size: 16px;
     font-weight: 700;
     line-height: 21px;
+    width: 190px;
+    padding: 12px 0;
 
     & svg {
       fill: #d41443;
     }
-
-    &__size {
-      width: 190px;
-      padding: 12px 0;
-    }
   }
 
-  &-section {
+  &__section {
     width: 176px;
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
-    padding: 13px 0;
+    padding: 12px 0;
 
-    &__big {
+    &--big {
       font-size: 16px;
       line-height: 21px;
     }
@@ -87,18 +89,24 @@ body {
 
 @media (min-width: 1200px) {
   .button {
-    &-red,
-    &-white {
-      &__hero {
+    &__red,
+    &__white {
+      &--hero {
         font-size: 14px;
         line-height: 18px;
         padding: 12px 20px;
       }
     }
 
-    &-menu {
-      &__size {
+    &__menu {
+      &--size {
         width: 160px;
+      }
+    }
+
+    &__section {
+      &--big {
+        width: 200px;
       }
     }
   }
