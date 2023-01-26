@@ -1,25 +1,5 @@
-// To delete after add global styles
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-
-body {
-  background-color: grey;
-}
-
-.test {
-  padding: 0 17px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 70%;
-}
-
 .button {
-  // Style to delete after add global styles
-  font-family: 'DM Sans', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 8px;
-
   background-color: #fff;
   border: 0;
   border-radius: 20px;
@@ -50,6 +30,11 @@ body {
     }
   }
 
+  &__white,
+  &__red {
+    line-height: 10px;
+  }
+
   &__arrow {
     background: url(../images/button-arrow.png);
     background-repeat: no-repeat;
@@ -60,25 +45,23 @@ body {
   }
 
   &__menu {
-    background-color: #fff;
-    color: #d41443;
     font-size: 16px;
     font-weight: 700;
     line-height: 21px;
     width: 190px;
     padding: 12px 0;
-
-    & svg {
-      fill: #d41443;
-    }
   }
 
   &__section {
     width: 176px;
     font-weight: 700;
-    font-size: 14px;
     line-height: 18px;
     padding: 12px 0;
+
+    &--medium {
+      font-size: 14px;
+      line-height: 18px;
+    }
 
     &--big {
       font-size: 16px;
@@ -99,9 +82,7 @@ body {
     }
 
     &__menu {
-      &--size {
-        width: 160px;
-      }
+      width: 160px;
     }
 
     &__section {
