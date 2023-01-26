@@ -1,0 +1,94 @@
+.button {
+  font-size: 8px;
+  background-color: $IColor;
+  border: 0;
+  border-radius: 20px;
+  padding: 7px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__span--arrow {
+    padding-right: 15px;
+  }
+
+  &__red {
+    background-color: $btnColor;
+    color: $IColor;
+
+    & svg {
+      fill: $IColor;
+    }
+  }
+
+  &__white {
+    background-color: $IColor;
+    color: $btnColor;
+
+    & svg {
+      fill: $btnColor;
+    }
+  }
+
+  &__white,
+  &__red {
+    line-height: 10px;
+  }
+
+  &__arrow {
+    background: url(../images/button-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $IColor;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__menu {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    width: 190px;
+    padding: 12px 0;
+  }
+
+  &__section {
+    width: 176px;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 12px 0;
+
+    &--medium {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &--big {
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .button {
+    &__red,
+    &__white {
+      &--hero {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 12px 20px;
+      }
+    }
+
+    &__menu {
+      width: 160px;
+    }
+
+    &__section {
+      &--big {
+        width: 200px;
+      }
+    }
+  }
+}
