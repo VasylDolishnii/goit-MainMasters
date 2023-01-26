@@ -1,0 +1,105 @@
+// To delete after add global styles
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+body {
+  background-color: grey;
+}
+
+.button {
+  // Style to delete after add global styles
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+
+  background-color: #fff;
+  border: 0;
+  border-radius: 20px;
+  padding: 7px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & div {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-red {
+    background-color: #d41443;
+    color: #fff;
+
+    & svg {
+      fill: white;
+    }
+  }
+
+  &-white {
+    background-color: #fff;
+    color: #d41443;
+
+    & svg {
+      fill: #d41443;
+    }
+  }
+
+  &-arrow {
+    background: url(../images/button-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+  }
+
+  &-menu {
+    background-color: #fff;
+    color: #d41443;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+
+    & svg {
+      fill: #d41443;
+    }
+
+    &__size {
+      width: 190px;
+      padding: 12px 0;
+    }
+  }
+
+  &-section {
+    width: 176px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 13px 0;
+
+    &__big {
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .button {
+    &-red,
+    &-white {
+      &__hero {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 12px 20px;
+      }
+    }
+
+    &-menu {
+      &__size {
+        width: 160px;
+      }
+    }
+  }
+}
