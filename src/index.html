@@ -2,58 +2,70 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Masters</title>
+    <title>IceCream</title>
+
+    <!-- Google Fonts Links -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- END Google Fonts Links -->
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+
+    <link rel="stylesheet" href="index.js" />
   </head>
+
   <body>
-    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
-    <include src="./partials/example.html"></include>
+    <header></header>
+    <main>
+      <!-- Examples of button usage -->
+      <button class="button button__red button__menu">
+        <span class="button__span--arrow">Buy now</span>
+        <svg width="8" height="10" viewBox="0 0 24 24">
+          <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
+        </svg>
+      </button>
 
-    <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
-    <h1>Hello World</h1>
-    <img src="images/worker_1.jpg" alt="" width="320" />
+      <button class="button button__red button__red--hero">Products</button>
 
-    <!-- Examples of button usage -->
-    <button class="button button__red button__menu">
-      <span class="button__span--arrow">Buy now</span>
-      <svg width="8" height="10" viewBox="0 0 24 24">
-        <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
-      </svg>
-    </button>
+      <button class="button button__white button__white--hero">How it's made?</button>
 
-    <button class="button button__red button__red--hero">Products</button>
+      <button class="button button__white button__section">
+        <span class="button__span--arrow">Read more</span>
+        <svg width="8" height="10" viewBox="0 0 24 24">
+          <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
+        </svg>
+      </button>
 
-    <button class="button button__white button__white--hero">How it's made?</button>
+      <button class="button button__arrow"></button>
 
-    <button class="button button__white button__section">
-      <span class="button__span--arrow">Read more</span>
-      <svg width="8" height="10" viewBox="0 0 24 24">
-        <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
-      </svg>
-    </button>
+      <button class="button button__red button__section button__section--big">
+        <span class="button__span--arrow">Our Locations</span>
+        <svg width="8" height="10" viewBox="0 0 24 24">
+          <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
+        </svg>
+      </button>
 
-    <button class="button button__arrow"></button>
-
-    <button class="button button__red button__section button__section--big">
-      <span class="button__span--arrow">Our Locations</span>
-      <svg width="8" height="10" viewBox="0 0 24 24">
-        <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
-      </svg>
-    </button>
-
-    <button class="button button__white button__section button__section--big">
-      <span class="button__span--arrow">Franchise</span>
-      <svg width="8" height="10" viewBox="0 0 24 24">
-        <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
-      </svg>
-    </button>
-
-    <script src="./index.js" type="module"></script>
+      <button class="button button__white button__section button__section--big">
+        <span class="button__span--arrow">Franchise</span>
+        <svg width="8" height="10" viewBox="0 0 24 24">
+          <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
+        </svg>
+      </button>
+    </main>
+    <footer></footer>
   </body>
 </html>
