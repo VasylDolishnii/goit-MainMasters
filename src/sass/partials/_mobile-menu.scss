@@ -1,6 +1,11 @@
 .hamburger {
+    position: relative;
     display: flex;
     justify-content: flex-end;
+}
+
+.current {
+    color: $IIIColor;
 }
 
 .menu-container {
@@ -22,21 +27,20 @@
 .mobile-menu {
     display: flex;
     flex-direction: column;
-    padding: 21px;
     height: 100%;
-    margin: 0;
+    margin-top: 60px;
 
-    &__item {
+    &__button {
         display: flex;
-        flex-direction: column;
-        gap: 22px;
-        margin-bottom: auto;
+        justify-content: center;
+        margin-bottom: 19px;
     }
 
     &__link {
         text-decoration: none;
         font-weight: 700;
         line-height: 1.28;
+        margin-left: 21px;
         color: $IColor;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -48,15 +52,15 @@
     }
 
     &__border {
-        border-top: 1px solid black;
-        padding-top: 13px;
+        border-top: 1px solid $mobileMenuLineColor;
+        padding: 13px 0 13px 0;
 
+        &--bottom {
+            border-bottom: 1px solid $mobileMenuLineColor;
+        }
 
     }
 }
-
-
-
 
 .menu-toggle {
     min-height: 40px;
@@ -88,8 +92,8 @@
 
 .menu-container .menu-toggle {
     position: absolute;
-    top: 23.26px;
-    right: 34px;
+    top: 20px;
+    right: 20px;
     fill: $IColor;
 }
 
