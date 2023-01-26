@@ -1,8 +1,56 @@
 .comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   &__photo {
     overflow: hidden;
     width: 85px;
     height: 85px;
     border-radius: 50%;
+    margin: 43px 0 29px;
+  }
+
+  &__table {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    z-index: 1;
+    position: relative;
+
+    &-background {
+      width: 280px;
+      height: 308px;
+      background-color: $IVBgColor;
+      position: relative;
+    }
+
+    &-quote {
+      position: absolute;
+      top: 28px;
+      left: 61px;
+    }
+
+    &-row {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 255%;
+      padding: 0 11px;
+      border-bottom: 1px solid $lineColor;
+    }
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+
+    &-dot {
+      background-color: $btnHoverIIColor;
+      border-radius: 50%;
+      width: 4px;
+      height: 4px;
+    }
   }
 }
