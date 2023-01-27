@@ -1,5 +1,151 @@
-.today {
-    color: red;
-    width: 300px;
-    height: 300px;
+.places-container {
+    
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    @media screen and (min-width: 480px) {
+     width: 480px;
+    }
+     @media screen and (min-width: 768px) {
+        width: 768px;
+     }
+        @media screen and (min-width: 1280px) {
+            width: 1280px;
+    }
+}
+.places-section {
+    padding-bottom: 81px;
+    background-color: $VBgColor;
+//   padding: 0 50px;
+//   background: linear-gradient(to bottom, #FFFFFF 0%,#FFFFFF 5%,#FFF5F6 5%,#FFF5F6 100%);
+  @media screen and (min-width: 1280px) {
+    width: 1280px;    
+    background: url("../images/pic.png");
+    background-repeat: no-repeat;
+    background-color: $VBgColor;
+}
+}
+.places-block {
+  height: 100%;
+  width: 220px;
+  color: black;
+  background-color: #FFFFFF;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 43px 20px;
+  @media screen and (min-width: 1280px) {
+    width: 330px;
+}
+}
+
+.places-city {
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+letter-spacing: 0.04em;
+color: #000000;
+margin-bottom: 10px;
+}
+.cafe {
+width: 80px;
+height: 16px;
+background: #F0D1A5;
+border-radius: 4px;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+letter-spacing: 0.04em;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+border: none;
+margin-bottom: 25px;
+}
+.foodtrack {
+width: 130px;
+height: 16px;
+background: #C2E297;
+border-radius: 4px;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+letter-spacing: 0.04em;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+border: none;
+margin-bottom: 25px;
+}
+.places-text {
+color: #907E82;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+margin-bottom: 25px;
+
+
+}
+.contact-link {
+    text-decoration: none;
+    color: $textColor;
+}
+.places-open {
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+letter-spacing: 0.04em;
+color: #000000;
+}
+.places-hour {
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+color: #FFA5BA;
+margin-bottom: 10px;
+/* &::after {
+bottom: -32px;
+content: "";
+height: 1px;
+background-color: #E1E1E1;
+} */
+}
+.places-contact {
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+color: #907E82;
+}
+.places-box {
+ list-style-type: none;
+ margin: auto;
+}
+.places-ul {
+  margin-top: 86px;  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    margin: 0 36px;
+    margin-top: 119px;
+    @media screen and (min-width: 1280px) {
+    margin-top: 132px;
+  }
+}
 }
