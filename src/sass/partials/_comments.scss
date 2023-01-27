@@ -4,6 +4,13 @@
   align-items: center;
   padding: 43px 0;
 
+  &--swiper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 43px;
+  }
+
   &__photo {
     overflow: hidden;
     width: 85px;
@@ -12,19 +19,14 @@
     margin-bottom: 29px;
   }
 
-  &__table {
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 20px;
-    z-index: 1;
+  &__background {
+    width: 280px;
+    height: 308px;
+    background-color: $IVBgColor;
     position: relative;
-
-    &-background {
-      width: 280px;
-      height: 308px;
-      background-color: $IVBgColor;
-      position: relative;
-    }
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
     &::after {
       content: '...';
@@ -34,20 +36,38 @@
       text-align: center;
       letter-spacing: 10px;
     }
+  }
 
-    &-quote {
-      position: absolute;
-      top: 28px;
-      left: 61px;
-    }
+  &__container {
+    padding: 43px 50px 0 50px;
 
-    &-row {
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 255%;
-      padding: 0 11px;
-      border-bottom: 1px solid $lineColor;
+    &--mobile {
+      display: block;
     }
+    &--tablet {
+      display: none;
+    }
+    &--desktop {
+      display: none;
+    }
+  }
+
+  &__quote {
+    position: absolute;
+    top: 28px;
+    left: 61px;
+  }
+
+  &__row {
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+    padding: 0 11px;
+    border-bottom: 1px solid $lineColor;
+    position: relative;
+    z-index: 1;
   }
 
   &__name {
@@ -59,13 +79,72 @@
   &__slider {
     display: flex;
     gap: 18px;
-    margin-top: 30px;
+    justify-content: center;
 
     &-element {
       background-color: $sliderColor;
       border-radius: 50%;
       width: 12px;
       height: 12px;
+
+      &--active {
+        background-image: url(/src/images/home.png);
+        background-color: transparent;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  color: #000;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .comments {
+    &__background {
+      width: 620px;
+      height: 164px;
+    }
+
+    &__container {
+      &--mobile {
+        display: none;
+      }
+      &--tablet {
+        display: block;
+      }
+      &--desktop {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .comments {
+    &__background {
+      width: 926px;
+      height: 138px;
+    }
+
+    &__container {
+      &--mobile {
+        display: none;
+      }
+      &--tablet {
+        display: none;
+      }
+      &--desktop {
+        display: block;
+      }
     }
   }
 }
