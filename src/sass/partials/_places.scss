@@ -25,8 +25,8 @@
 .places-block {
   height: 100%;
   width: 220px;
-  color: black;
-  background-color: #FFFFFF;
+  color: $IIColor;
+  background-color: $IColor;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 43px 20px;
@@ -40,21 +40,21 @@
 }
 
 .places-city {
-font-family: 'DM Sans';
+font-family: $fontPrimary;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 186%;
 letter-spacing: 0.04em;
-color: #000000;
+color: $IIColor;
 margin-bottom: 10px;
 }
 .cafe {
 width: 80px;
 height: 16px;
-background: #F0D1A5;
+background: $IIBgColor;
 border-radius: 4px;
-color: white;
+color: $IColor;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -66,18 +66,24 @@ font-size: 12px;
 line-height: 186%;
 border: none;
 margin-bottom: 25px;
+@media screen and (min-width: 768px) {
+margin-bottom: 30px;
+@media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+}
+}
 }
 .foodtrack {
 width: 130px;
 height: 16px;
-background: #C2E297;
+background: $IIIBgColor;
 border-radius: 4px;
-color: white;
+color: $IColor;
 display: flex;
 align-items: center;
 justify-content: center;
 letter-spacing: 0.04em;
-font-family: 'DM Sans';
+font-family: $fontPrimary;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
@@ -86,34 +92,33 @@ border: none;
 margin-bottom: 25px;
 }
 .places-text {
-color: #907E82;
-font-family: 'DM Sans';
+color: $textColor;
+font-family: $fontPrimary;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 18px;
-margin-bottom: 25px;
 }
 .contact-link {
     text-decoration: none;
     color: $textColor;
 }
 .places-open {
-font-family: 'DM Sans';
+font-family: $fontPrimary;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 186%;
 letter-spacing: 0.04em;
-color: #000000;
+color: $IIColor;
 }
 .places-hour {
-font-family: 'DM Sans';
+font-family: $fontPrimary;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 186%;
-color: #FFA5BA;
+color: $IVColor;
 margin-bottom: 10px;
 /* &::after {
 bottom: -32px;
@@ -123,12 +128,12 @@ background-color: #E1E1E1;
 } */
 }
 .places-contact {
-font-family: 'DM Sans';
+font-family: $fontPrimary;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 18px;
-color: #907E82;
+color: $textColor;
 display: flex;
 flex-direction: column;
 }
@@ -151,6 +156,14 @@ flex-direction: column;
 }
 }
 .text-line {
-    background-color: black;
+    background-color: $lineColor;
+    margin: 25px 0;
+    border: none;
+    height: 1px;
+    @media screen and (min-width: 768px) {
     margin: 30px 0;
+    @media screen and (min-width: 1280px) {
+    margin: 32px 0;
+}
+    }
 }
