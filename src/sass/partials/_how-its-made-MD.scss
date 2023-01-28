@@ -1,0 +1,21 @@
+.howitsmade {
+  background-color: $VBgColor;
+
+  &_title {
+    font-family: $fontSecondary;
+    text-align: center;
+    font-weight: 400;
+
+    &--first {
+      color: $IVColor;
+      font-size: 18px;
+      line-height: 1.17;
+    }
+    &--second {
+      font-size: 34px;
+      color: $IIIColor;
+      letter-spacing: 0.04em;
+      line-height: 1.15;
+    }
+  }
+}
