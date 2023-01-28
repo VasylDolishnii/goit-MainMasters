@@ -35,6 +35,8 @@
       display: block;
       text-align: center;
       letter-spacing: 10px;
+      line-height: 0;
+      margin-top: 28px;
     }
   }
 
@@ -64,6 +66,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 255%;
+    letter-spacing: 0.04em;
     padding: 0 11px;
     border-bottom: 1px solid $lineColor;
     position: relative;
@@ -112,6 +115,10 @@
     &__background {
       width: 620px;
       height: 164px;
+
+      &::after {
+        margin-top: 40px;
+      }
     }
 
     &__container {
@@ -124,6 +131,24 @@
       &--desktop {
         display: none;
       }
+    }
+
+    &__photo {
+      margin-bottom: 19px;
+    }
+
+    &__quote {
+      top: 30px;
+      left: 40px;
+    }
+
+    &__row {
+      font-size: 14px;
+      line-height: 216%;
+    }
+
+    &__name {
+      margin-top: 42px;
     }
   }
 }
@@ -133,6 +158,10 @@
     &__background {
       width: 926px;
       height: 138px;
+
+      &::after {
+        margin-top: 35px;
+      }
     }
 
     &__container {
@@ -145,6 +174,26 @@
       &--desktop {
         display: block;
       }
+    }
+
+    &__photo {
+      margin-bottom: 15px;
+    }
+
+    &__quote {
+      top: 32px;
+      left: 50px;
+    }
+
+    &__row {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 186%;
+      letter-spacing: 0.04em;
+    }
+
+    &__name {
+      margin-top: 34px;
     }
   }
 }
