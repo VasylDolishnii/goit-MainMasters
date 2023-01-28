@@ -35,7 +35,6 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        gap: 30px;
         justify-content: center;
         align-items: center;
 
@@ -94,7 +93,7 @@
         font-family: $fontPrimary;
         line-height: 176%;
         text-align: center;
-        margin: 0 40px;
+        margin: 30px 40px 30px 40px;
     }
 
 }
@@ -149,7 +148,7 @@
         }
     
         &__description {
-            margin: 0 11px;
+            margin: 30px 11px 40px 11px;
         }
     
     }
@@ -177,8 +176,7 @@
         &__card {
             width: 33%;
             max-width: 329px;
-            height: 485px;
-            gap: 30px;
+            height: 525px;
 
         }
     
@@ -204,7 +202,7 @@
     
         &__description {
             font-size: 16px;
-            margin: 0 44px;
+            margin: 32px 44px 62px 44px;
 
         }
     
