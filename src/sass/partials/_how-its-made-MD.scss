@@ -1,21 +1,49 @@
 .howitsmade {
   background-color: $VBgColor;
 
-  &_title {
+  &__title {
     font-family: $fontSecondary;
     text-align: center;
     font-weight: 400;
+    text-transform: uppercase;
 
     &--first {
       color: $IVColor;
       font-size: 18px;
       line-height: 1.17;
+      padding: 125px 61px 15px 61px;
     }
     &--second {
       font-size: 34px;
       color: $IIIColor;
       letter-spacing: 0.04em;
       line-height: 1.15;
+      padding: 0px 61px 26px 59px;
+    }
+  }
+
+  &__text {
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 12px;
+    padding-right: 50px;
+    padding-left: 50px;
+    line-height: 1.58;
+    padding-bottom: 47px;
+
+    &--first {
+      color: $IIColor;
+      padding-top: 46px;
+    }
+
+    &--second {
+      color: $textColor;
+      background-image: linear-gradient(to bottom, $VBgColor, $VBgColor),
+        url('/src/images/milk.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      line-height: 1.18;
     }
   }
 }
