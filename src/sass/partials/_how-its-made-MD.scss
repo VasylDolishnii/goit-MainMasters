@@ -39,11 +39,37 @@
 
     &--second {
       color: $textColor;
-      background-image: linear-gradient(to bottom, $VBgColor, $VBgColor),
-        url('/src/images/milk.png');
-      background-size: cover;
+      background-image: url('/src/images/milk@2.png');
       background-repeat: no-repeat;
-      line-height: 1.18;
+      background-size: contain;
+      background-position: 0px 52px;
     }
+  }
+}
+
+.how {
+  padding: 0px 38px 38px 20px;
+
+  &__img {
+    border-style: none;
+  }
+
+  &__numbers {
+    font-family: $fontSecondary;
+    text-transform: uppercase;
+    color: $IIIColor;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    padding-top: 16px;
+  }
+
+  &__description {
+    font-family: $fontPrimary;
+    color: $IIColor;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
   }
 }
