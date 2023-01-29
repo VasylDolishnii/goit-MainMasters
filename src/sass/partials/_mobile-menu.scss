@@ -5,7 +5,7 @@
 }
 
 .current {
-  color: $IIIColor;
+  color: $IIIColor !important;
 }
 
 .menu-container {
@@ -27,7 +27,8 @@
 .menu-container.is-open {
   transform: translateX(0%);
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  transition-duration: 250ms;
 }
 
 .mobile-menu {
@@ -105,4 +106,27 @@
 .menu-container .menu-toggle:hover,
 .menu-container .menu-toggle:focus {
   fill: $IIIColor;
+}
+@media (max-width: 1200px) {
+  .button__menu-mobile {
+    width: 204px;
+  }
+}
+@media (max-width: 768px) {
+  .button__menu-mobile {
+    width: 204px;
+  }
+  .button__menu-mobile-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    transition-duration: 250ms;
+  }
 }
