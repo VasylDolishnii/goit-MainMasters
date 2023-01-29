@@ -1,0 +1,46 @@
+.hero-container {
+  background-color: $IBgColor;
+  height: 502px;
+  background-image: url(../images/ice-cream_mobile@1.png), url(../images/background-circe.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 117px 92px, 36px 83px;
+  background-size: 171px 410px, 346px 344px;
+  position: relative;
+}
+.hero__slogan-buttons {
+  padding-top: 137px;
+}
+.hero__slogan {
+  text-transform: uppercase;
+  height: 106px;
+  width: 218px;
+  font-family: $fontSecondary;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 29.77px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: $IColor;
+  margin-bottom: 19px;
+}
+.hero__slogan-span {
+  font-family: $fontSecondary;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 45.84px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: $IIIColor;
+}
+
+.hero__places {
+  display: none;
+}
+.hero__button-flex {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 0px;
+}
+.hero__button {
+  font-family: $fontPrimary;
+}
