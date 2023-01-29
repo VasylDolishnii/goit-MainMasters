@@ -59,6 +59,7 @@
     line-height: 100%;
     letter-spacing: 4%;
     padding-top: 16px;
+    padding-bottom: 19px;
   }
 
   &__description {
@@ -68,4 +69,8 @@
     font-size: 12px;
     line-height: 170%;
   }
+}
+
+.collage {
+  transform: translateY(50%);
 }
