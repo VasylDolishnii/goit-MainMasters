@@ -3,6 +3,7 @@
 
   &__container {
     padding: 20px;
+    margin: 0 auto;
     width: 320px;
     display: flex;
     flex-direction: column;
@@ -23,7 +24,7 @@
   &__container hr {
     border: none;
     border-top: 1px solid #ccc;
-    margin-bottom: 22px;
+    margin: 0;
     width: 100%;
   }
 
@@ -48,11 +49,13 @@
   &__socials {
     display: flex;
     margin-bottom: 46px;
+    gap: 28px;
+    justify-content: end;
   }
 
   &__contact {
     text-align: end;
-    margin-bottom: 43px;
+    margin-bottom: 23px;
   }
 
   &__contact--text {
@@ -77,5 +80,10 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
   }
 }
