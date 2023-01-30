@@ -149,8 +149,13 @@
     
         &__description {
             margin: 30px 11px 40px 11px;
+
+            .products_description-hidden {
+                display: none;
+            }
+        
         }
-    
+
     }
 
 }
