@@ -58,14 +58,32 @@
     // background-size: auto auto, auto auto, auto auto, auto auto;
     position: relative;
   }
+
   .hero-container::before {
     background-image: url(../images/ice-cream_destkop@1.png);
     position: absolute;
-    top: 700px;
-    left: 0;
+    background-size: 236px 557px;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100vw;
+    top: 26px;
+    left: 594px;
     content: '';
     z-index: 3;
   }
+  .hero-container:after {
+    background-image: url(../images/background-circe.png);
+    position: absolute;
+    background-size: 538px 538px;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100vw;
+    top: -25px;
+    left: 475px;
+    content: '';
+    z-index: 2;
+  }
+
   .hero__slogan-buttons {
     padding-top: 84px;
     padding-bottom: 112px;
@@ -75,6 +93,7 @@
     text-transform: uppercase;
 
     margin-right: 714px;
+    margin-bottom: 25px;
     height: 137px;
     width: 277px;
     font-family: $fontSecondary;
@@ -94,12 +113,11 @@
     line-height: 52px;
     letter-spacing: 0.04em;
     text-align: left;
-    color: #d41443;
+    color: $IIIColor;
   }
   .hero__numbers {
     display: flex;
     align-items: baseline;
-    margin-bottom: 9px;
   }
   .hero__places {
     display: flex;
@@ -109,25 +127,37 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    font-family: Titan One;
+    font-family: $fontSecondary;
     font-size: 46px;
     font-weight: 400;
     line-height: 53px;
     letter-spacing: 0.04em;
     text-align: right;
-    color: #d41443;
+    color: $IIIColor;
   }
   .hero__place-span {
-    font-family: DM Sans;
+    font-family: $fontPrimary;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0em;
     text-align: right;
-    color: #ffffff;
+    color: $IColor;
     margin-bottom: 18px;
   }
   .hero__place-span--bottom {
     margin-bottom: 0;
+  }
+  .hero__lorem {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    width: 200px;
+    margin-left: 275px;
+    padding-bottom: 102px;
   }
 }
