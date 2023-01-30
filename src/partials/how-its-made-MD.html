@@ -8,10 +8,18 @@
   <div class="howitsmade__description">
     <div>
       <img
-        src="./images/cow.png"
+        srcset="
+          ./images/cow-mb@1.png 450w,
+          ./images/cow-mb@2.png 900w,
+          ./images/cow-tb@1.png 354w,
+          ./images/cow-tb@2.png 708w,
+          ./images/cow-dt@1.png 270w,
+          ./images/cow-dt@2.png 540w
+        "
+        src="./images/cow-mb@1.png"
+        sizes="(min-width: 1200px) 516px, (min-width: 768px) 340px, (min-width: 480px) 230px, 100vw"
+        min-width="230"
         alt="picture showing a cow and a milk jug"
-        width="280px"
-        height="279px"
       />
     </div>
 
@@ -52,13 +60,13 @@
     </li>
 
     <li class="how__li">
-      <img src="./images/icon-fruit.png" alt="icon with milk" width="50px" height="50px" />
+      <img src="./images/icon-fruit.png" alt="icon with fruits" width="50px" height="50px" />
       <p class="how__numbers">16kg</p>
       <p class="how__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
     </li>
 
     <li class="how__li">
-      <img src="./images/icon-heart.png" alt="icon with milk" width="44px" height="50px" />
+      <img src="./images/icon-heart.png" alt="icon with heart" width="44px" height="50px" />
       <p class="how__numbers">84</p>
       <p class="how__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
     </li>
@@ -67,10 +75,18 @@
   <!-- Collage with many pictures -->
   <img
     class="collage"
-    src="./images/collage.png"
-    alt="collage of many pictures with people eating our ice-ceams"
-    width="364px"
-    height="122px"
+    srcset="
+      ./images/collage-mb@1.png 450w,
+      ./images/collage-mb@2.png 900w,
+      ./images/collage-tb@1.png 354w,
+      ./images/collage-tb@2.png 708w,
+      ./images/collage-dt@1.png 270w,
+      ./images/collage-dt@2.png 540w
+    "
+    src="./images/collage-mb@1.png"
+    sizes="(min-width: 1200px) 1280px, (min-width: 768px) 786px, (min-width: 480px) 364px, 100vw"
+    min-width="364"
+    alt="collage of many pictures showing people eating our ice-ceams"
   />
 </section>
 <!--Section how it's made  end-->
