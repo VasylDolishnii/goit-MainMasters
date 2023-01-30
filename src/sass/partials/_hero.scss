@@ -1,3 +1,4 @@
+//mobile
 .hero-container {
   background-color: $IBgColor;
   background-image: url(../images/ice-cream_mobile@1.png), url(../images/background-circe.png);
@@ -43,4 +44,81 @@
 }
 .hero__button {
   font-family: $fontPrimary;
+}
+//desktop
+@media (min-width: 1280px) {
+  .hero-container {
+    background-color: $IBgColor;
+
+    background-image: url(../images/ice-cream_destkop@1.png), url(../images/background-circe.png),
+      url(../images/ellipse.png), url(../images/ellipse.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 594px 21px, 475px -21px, 1153px 74px, 1153px 166px;
+    background-size: auto auto, auto auto, auto auto, auto auto;
+    position: relative;
+  }
+  .hero__slogan-buttons {
+    padding-top: 84px;
+    padding-bottom: 112px;
+    padding-left: 95px;
+  }
+  .hero__slogan {
+    text-transform: uppercase;
+
+    margin-right: 714px;
+    height: 137px;
+    width: 277px;
+    font-family: $fontSecondary;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    font-family: Titan One;
+    text-align: left;
+    color: $IColor;
+  }
+  .hero__slogan-span {
+    font-family: $fontSecondary;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #d41443;
+  }
+  .hero__numbers {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 9px;
+  }
+  .hero__places {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__place {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Titan One;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 53px;
+    letter-spacing: 0.04em;
+    text-align: right;
+    color: #d41443;
+  }
+  .hero__place-span {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #ffffff;
+    margin-bottom: 18px;
+  }
+  .hero__place-span--bottom {
+    margin-bottom: 0;
+  }
 }
