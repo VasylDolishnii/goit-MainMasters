@@ -12,11 +12,11 @@
             width: 1280px;
     }
 }
+
 .places-section {
     padding-bottom: 81px;
     background-color: $VBgColor;
-  @media screen and (min-width: 1280px) {
-    width: 1280px;    
+  @media screen and (min-width: 1280px) {    
     background: url("../images/pic.png");
     background-repeat: no-repeat;
     background-color: $VBgColor;
@@ -166,4 +166,26 @@ flex-direction: column;
     margin: 32px 0;
 }
     }
+}
+.places-button {
+list-style-type: none;
+}
+.places-button-red {
+list-style-type: none;
+}
+.places-buttons-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 54px;
+  @media screen and (min-width: 768px) {
+  flex-direction: row;
+  margin-top: 81px;
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    margin-top: 86px;
+}
+}
 }
