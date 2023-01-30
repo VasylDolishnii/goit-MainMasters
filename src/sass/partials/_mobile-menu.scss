@@ -11,9 +11,10 @@
 .menu-container {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100vw;
     height: 100vh;
+    max-width: 250px;
     background-color: $mobileMenuBgColor;
     z-index: 999;
     transform: translateX(100%);
@@ -29,6 +30,7 @@
     flex-direction: column;
     height: 100%;
     margin-top: 60px;
+
 
     &__button {
         display: flex;
