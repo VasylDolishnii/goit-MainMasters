@@ -1,3 +1,10 @@
 .hamburger {
   padding: 0 20px;
 }
+
+@media (min-width: 768px) {
+  .hamburger {
+    padding-top: 37px;
+    padding-right: 20px;
+  }
+}

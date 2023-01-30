@@ -1,16 +1,16 @@
 .section-nav {
-  background-color: $IBgColor;
   display: flex;
   justify-content: center;
 }
+
 .center-nav {
   width: 100%;
   max-width: 1280px;
-  height: 62px;
   justify-content: space-between;
   align-items: center;
   display: flex;
 }
+
 .main-header {
   display: flex;
   align-items: center;
@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
   }
+
   &__link {
     font-family: $fontPrimary;
     font-weight: 700;
@@ -33,6 +34,7 @@
     gap: 35px;
     margin-left: 110px;
   }
+
   @media (max-width: 1280px) {
     &__list {
       position: absolute;
@@ -47,9 +49,18 @@
       overflow: hidden;
     }
   }
+
+  @media (min-width: 768px) {
+    &__nav {
+      padding-top: 37px;
+      padding-left: 34px;
+    }
+  }
+
   @media (min-width: 1280px) {
     &__nav {
-      padding: 37px 46px;
+      padding-top: 37px;
+      padding-left: 34px;
     }
   }
 }
