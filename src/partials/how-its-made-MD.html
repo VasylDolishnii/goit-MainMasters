@@ -1,56 +1,70 @@
 <!--Section how it's made  start-->
 <section class="howitsmade">
-  <p class="howitsmade__title howitsmade__title--first">tradidtion and love</p>
-  <p class="howitsmade__title howitsmade__title--second">how it's made</p>
-  <img
-    src="./images/cow.png"
-    alt="picture showing a cow and a milk jug"
-    width="280px"
-    height="279px"
-  />
+  <div class="howitsmade__title">
+    <p class="howitsmade__title--first">tradidtion and love</p>
+    <p class="howitsmade__title--second">how it's made</p>
+  </div>
 
-  <ul>
-    <li class="howitsmade__text howitsmade__text--first">
-      Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
-      eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-    </li>
+  <div class="howitsmade__description">
+    <div>
+      <img
+        src="./images/cow.png"
+        alt="picture showing a cow and a milk jug"
+        width="280px"
+        height="279px"
+      />
+    </div>
 
-    <li class="howitsmade__text howitsmade__text--second">
-      Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
-      imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
-      Cras massa nibh, tincidunt. <br /><br />Aliquam erat volutpat. Aenean accumsan.
-    </li>
+    <div>
+      <ul>
+        <div class="milk-background-320">
+          <li class="howitsmade__text howitsmade__text--first">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+            lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+          </li>
 
-    <li class="howitsmade__text">
-      <button class="button button__white button__section button__section--medium">
-        <span class="button__span--arrow">Read more</span>
-        <svg width="8" height="10" viewBox="0 0 24 24">
-          <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
-        </svg>
-      </button>
-    </li>
-  </ul>
+          <li class="howitsmade__text howitsmade__text--second">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+            orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
+            urna maximus. Cras massa nibh, tincidunt. <br /><br />Aliquam erat volutpat. Aenean
+            accumsan.
+          </li>
+        </div>
 
-  <ul>
-    <li class="how">
+        <li class="howitsmade__text howitsmade__text--third">
+          <button class="button button__white button__section button__section--medium">
+            <span class="button__span--arrow">Read more</span>
+            <svg width="8" height="10" viewBox="0 0 24 24">
+              <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- icons with numerical statistics -->
+  <ul class="how">
+    <li class="how__li">
       <img src="./images/icon-milk.png" alt="icon with milk" width="33px" height="50px" />
       <p class="how__numbers">721</p>
       <p class="how__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
     </li>
 
-    <li class="how">
+    <li class="how__li">
       <img src="./images/icon-fruit.png" alt="icon with milk" width="50px" height="50px" />
       <p class="how__numbers">16kg</p>
       <p class="how__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
     </li>
 
-    <li class="how">
+    <li class="how__li">
       <img src="./images/icon-heart.png" alt="icon with milk" width="44px" height="50px" />
       <p class="how__numbers">84</p>
       <p class="how__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
     </li>
   </ul>
 
+  <!-- Collage with many pictures -->
   <img
     class="collage"
     src="./images/collage.png"

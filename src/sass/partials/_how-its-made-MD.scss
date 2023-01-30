@@ -6,20 +6,28 @@
     text-align: center;
     font-weight: 400;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
 
     &--first {
       color: $IVColor;
       font-size: 18px;
       line-height: 1.17;
-      padding: 125px 61px 15px 61px;
+      padding-top: 125px;
+      padding-bottom: 15px;
     }
     &--second {
       font-size: 34px;
       color: $IIIColor;
       letter-spacing: 0.04em;
       line-height: 1.15;
-      padding: 0px 61px 26px 59px;
+      padding-bottom: 26px;
     }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
   }
 
   &__text {
@@ -30,25 +38,38 @@
     padding-right: 50px;
     padding-left: 50px;
     line-height: 1.58;
-    padding-bottom: 47px;
 
     &--first {
       color: $IIColor;
       padding-top: 46px;
+      padding-bottom: 36px;
     }
 
     &--second {
       color: $textColor;
-      background-image: url('/src/images/milk@2.png');
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: 0px 52px;
+      padding-bottom: 22px;
+    }
+
+    &--third {
+      padding-bottom: 39px;
     }
   }
 }
 
+.milk-background-320 {
+  background-image: url('/src/images/milk-320@1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 100%;
+}
+
 .how {
-  padding: 0px 38px 38px 20px;
+  display: flex;
+  flex-direction: column;
+
+  &__li {
+    padding: 0px 38px 38px 20px;
+  }
 
   &__numbers {
     font-family: $fontSecondary;
@@ -67,10 +88,146 @@
     color: $IIColor;
     font-weight: 700;
     font-size: 12px;
-    line-height: 170%;
+    line-height: 1.67;
   }
 }
 
 .collage {
   transform: translateY(50%);
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .milkbackground {
+    background-image: url(/src/images/milk-1200@2.png);
+  }
+
+  .collage {
+    background-image: url(/src/images/collage-1200@2.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .milkbackground {
+    background-image: url(/src/images/milk-1200@3.png);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .howitsmade {
+    &__title {
+      &--first {
+        font-size: 26px;
+        line-height: 1.15;
+        padding-top: 130px;
+        padding-bottom: 16px;
+      }
+      &--second {
+        font-size: 48px;
+        letter-spacing: 4%;
+        line-height: 1.15;
+        padding-bottom: 100px;
+      }
+    }
+    &__description {
+      flex-direction: row;
+    }
+
+    &__text {
+      font-size: 14px;
+      padding-right: 17px;
+      padding-left: 36px;
+      line-height: 1.79;
+      letter-spacing: 4%;
+
+      &--first {
+        padding-top: 100px;
+      }
+    }
+  }
+
+  .milk-background-320 {
+    background-image: none;
+  }
+
+  .how {
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 36px;
+    gap: 60px;
+
+    &__numbers {
+      font-size: 48px;
+      padding-top: 36px;
+      padding-bottom: 13px;
+    }
+
+    &__description {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .milk-background-320 {
+    background-image: none;
+  }
+  .howitsmade {
+    &__title {
+      &--first {
+        font-size: 30px;
+        line-height: 1.13;
+        letter-spacing: 4%;
+      }
+      &--second {
+        font-size: 58px;
+        letter-spacing: 6%;
+        line-height: 1.14;
+        padding-bottom: 120px;
+      }
+    }
+
+    &__description {
+      background-image: url(/src/images/milk-1200@1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex-direction: row;
+    }
+
+    &__text {
+      font-size: 16px;
+      padding-right: 74px;
+      padding-left: 115px;
+      line-height: 1.75;
+      letter-spacing: 4%;
+
+      &--first {
+        padding-top: 106px;
+      }
+
+      &--second {
+        padding-bottom: 45px;
+      }
+    }
+  }
+
+  .how {
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 36px;
+    gap: 60px;
+
+    &__numbers {
+      font-size: 48px;
+      padding-top: 36px;
+      padding-bottom: 13px;
+    }
+
+    &__description {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
 }
