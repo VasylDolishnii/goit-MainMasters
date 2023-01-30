@@ -8,12 +8,9 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: 480px) {
-      width: 480px;
-    }
-
     @media screen and (min-width: 768px) {
       width: 768px;
+      padding-inline: 36px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -37,6 +34,10 @@
     color: $IVColor;
     font-size: 18px;
     margin-bottom: 17px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 7px;
+    }
   }
 
   &__headline--secondary {
@@ -44,6 +45,10 @@
     color: $IIIColor;
     font-size: 34px;
     margin-bottom: 43px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 93px;
+    }
   }
 
   &__socials {
@@ -80,10 +85,21 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 9px;
+    }
   }
 
   &__icon {
     width: 32px;
     height: 32px;
+  }
+
+  &__tablet--primary {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
