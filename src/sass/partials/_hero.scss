@@ -49,13 +49,22 @@
 @media (min-width: 1280px) {
   .hero-container {
     background-color: $IBgColor;
+    background-image: none;
 
-    background-image: url(../images/ice-cream_destkop@1.png), url(../images/background-circe.png),
-      url(../images/ellipse.png), url(../images/ellipse.png);
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: 594px 21px, 475px -21px, 1153px 74px, 1153px 166px;
-    background-size: auto auto, auto auto, auto auto, auto auto;
+    // background-image: url(../images/ice-cream_destkop@1.png), url(../images/background-circe.png),
+    //   url(../images/ellipse.png), url(../images/ellipse.png);
+    // background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    // background-position: 594px 21px, 475px -21px, 1153px 74px, 1153px 166px;
+    // background-size: auto auto, auto auto, auto auto, auto auto;
     position: relative;
+  }
+  .hero-container::before {
+    background-image: url(../images/ice-cream_destkop@1.png);
+    position: absolute;
+    top: 700px;
+    left: 0;
+    content: '';
+    z-index: 3;
   }
   .hero__slogan-buttons {
     padding-top: 84px;
