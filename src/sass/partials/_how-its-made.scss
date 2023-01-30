@@ -87,14 +87,15 @@
     }
 
     &__small-numbers {
+        font-size: 36px;
         color: $IIIColor;
         font-family: $fontSecondary;
-        font-size: 36px;
     }
 
     &__small-text {
         color: $IIColor;
         font-weight: 700;
+        font-size: 12px;
         line-height: 1.7;
     }
 
@@ -126,6 +127,68 @@
         }
     }
 }
-.background-box > * {
-    z-index: 100;
+
+@media screen and (min-width: 768px) {
+
+    .section {
+        padding-top: 130px;
+        padding-bottom: 242px;
+    }
+
+    .how-its-made {
+
+        &__title {
+            font-size: 26px;
+            margin-bottom: 16px;         
+        
+            &--ubig {
+                font-size: 48px;
+                margin-bottom: 50px;
+            }
+        }
+
+
+        &__section {
+            flex-direction: row;
+            padding: 0 16px;
+        }
+
+        &__text-list {
+            font-size: 14px;
+            line-height: 1.7;
+            padding-left: 17px;
+            padding-right: 0;
+            gap: 30px;
+            margin-bottom: 66px;
+        }
+
+        &__text-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__icon-list {
+            flex-direction: row;
+            gap: 55px;
+            padding: 0 16px;
+        }
+
+        &__small-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &__small-numbers {
+            font-size: 48px;
+        }
+
+        &__small-text {
+            font-size: 14px;        
+        }
+
+        &__collage {
+            transform: translateY(55%);
+        }
+    }
 }
