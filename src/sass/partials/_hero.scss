@@ -1,14 +1,14 @@
 .hero-container {
   background-color: $IBgColor;
-  height: 502px;
   background-image: url(../images/ice-cream_mobile@1.png), url(../images/background-circe.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: 117px 92px, 36px 83px;
+  background-position: 117px 36px, 36px 27px;
   background-size: 171px 410px, 346px 344px;
   position: relative;
 }
 .hero__slogan-buttons {
-  padding-top: 137px;
+  padding-top: 133px;
+  padding-bottom: 160px;
 }
 .hero__slogan {
   text-transform: uppercase;
