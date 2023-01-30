@@ -53,9 +53,11 @@
         font-size: 12px;
         font-weight: 500;
         line-height: 1.6;
-        padding: 0 35px;
+        padding: 0 30px;
         gap: 30px;
         margin-bottom: 40px;
+        position: relative;
+        z-index: 99;
 
         &--grey {
             color: $textColor;
@@ -108,7 +110,7 @@
     position: relative;
 
     &::before {
-        position: relative;
+        position: absolute;
         top: 700px;
         left: 0;
         content: '';
@@ -117,10 +119,13 @@
         background-repeat: no-repeat;
         height: 100%;
         width: 100vw;
-        z-index: -1;
+        z-index: 3;
 
         @media screen and (min-width: 768px) {
             display: none;
         }
     }
+}
+.background-box > * {
+    z-index: 100;
 }
