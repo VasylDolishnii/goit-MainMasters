@@ -37,6 +37,7 @@
 
     @media screen and (min-width: 768px) {
       padding-top: 7px;
+      font-size: 26px;
     }
   }
 
@@ -48,6 +49,7 @@
 
     @media screen and (min-width: 768px) {
       margin-bottom: 93px;
+      font-size: 48px;
     }
   }
 
@@ -68,6 +70,10 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   &__contact--phone {
@@ -76,6 +82,10 @@
     font-weight: 700;
     font-size: 13px;
     line-height: 1.86;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   &__copyrights {
@@ -94,6 +104,11 @@
   &__icon {
     width: 32px;
     height: 32px;
+
+    @media screen and (min-width: 768px) {
+      width: 34px;
+      height: 34px;
+    }
   }
 
   &__tablet--primary {
@@ -101,5 +116,11 @@
       display: flex;
       justify-content: space-between;
     }
+  }
+}
+
+.footer__copyrights br {
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
