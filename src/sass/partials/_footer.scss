@@ -14,7 +14,9 @@
     }
 
     @media screen and (min-width: 1200px) {
-      width: 1200px;
+      width: 100%;
+      max-width: 1280px;
+      padding: 0 114px;
     }
   }
 
@@ -27,6 +29,15 @@
 
   &__headline {
     text-transform: uppercase;
+    width: 234px;
+
+    @media screen and (min-width: 768px) {
+      width: 340px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 474px;
+    }
   }
 
   &__headline--primary {
@@ -38,6 +49,10 @@
     @media screen and (min-width: 768px) {
       padding-top: 7px;
       font-size: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
     }
   }
 
@@ -51,6 +66,10 @@
       margin-bottom: 93px;
       font-size: 48px;
     }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 58px;
+    }
   }
 
   &__socials {
@@ -58,6 +77,10 @@
     margin-bottom: 46px;
     gap: 28px;
     justify-content: end;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
 
   &__contact {
@@ -74,6 +97,10 @@
     @media screen and (min-width: 768px) {
       font-size: 14px;
     }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
   }
 
   &__contact--phone {
@@ -86,6 +113,10 @@
     @media screen and (min-width: 768px) {
       font-size: 14px;
     }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
   }
 
   &__copyrights {
@@ -95,9 +126,14 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
+    text-align: center;
 
     @media screen and (min-width: 768px) {
       padding-top: 9px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 10px;
     }
   }
 
@@ -111,7 +147,11 @@
     }
   }
 
-  &__tablet--primary {
+  &__icon:hover {
+    fill: $btnHoverIIColor;
+  }
+
+  &__container--modifier {
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: space-between;
