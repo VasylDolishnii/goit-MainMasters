@@ -5,17 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IceCream</title>
-
-    <!-- Google Fonts Links -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- END Google Fonts Links -->
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
     <link
       rel="stylesheet"
@@ -24,16 +15,31 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <link rel="stylesheet" href="index.js" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../src/images/favicon.png" />
+    <script defer type="module" src="index.js"></script>
   </head>
-
   <body>
-    <header></header>
+    <header>
+      <section class="section-nav">
+        <div class="center-nav">
+          <include src="./partials/header-nav.html"></include>
+          <include src="./partials/mobile-menu.html"></include>
+        </div>
+      </section>
+    </header>
     <main>
-      <!-- <include src="./partials/buttons.html"></include> -->
       <include src="./partials/places.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/how-its-made.html"></include>
+      <include src="./partials/comments.html"></include>
     </main>
-    <footer></footer>
+    <footer><include src="./partials/footer.html"></include></footer>
+    <include src="./partials/mobile-menu-sidebar.html"></include>
   </body>
 </html>

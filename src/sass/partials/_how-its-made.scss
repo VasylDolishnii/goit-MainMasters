@@ -1,0 +1,305 @@
+.section {
+  padding-top: 125px;
+  padding-bottom: 145px;
+  background-color: $VBgColor;
+  line-height: 1.2;
+  margin: 0 auto;
+}
+
+.how-its-made {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    color: $IVColor;
+    font-family: $fontSecondary;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+
+    &--ubig {
+      color: $IIIColor;
+      font-size: 40px;
+      margin-bottom: 26px;
+    }
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 46px;
+  }
+
+  &__cow {
+    max-height: 100%;
+  }
+
+  &__text-list {
+    display: flex;
+    flex-direction: column;
+    color: $IIColor;
+    font-family: $fontPrimary;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+    padding: 0 30px;
+    position: relative;
+    z-index: 99;
+  }
+
+  &__text-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+
+    &--lower {
+      margin-bottom: 31px;
+    }
+
+    &--grey {
+      color: $textColor;
+      gap: 30px;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+  }
+
+  &__icon-list {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+
+  &__small-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__small-icon {
+    margin-bottom: 16px;
+  }
+
+  &__small-numbers {
+    font-size: 36px;
+    color: $IIIColor;
+    font-family: $fontSecondary;
+    margin-bottom: 19px;
+  }
+
+  &__small-text {
+    color: $IIColor;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  &__collage {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    transform: translateY(79%);
+  }
+
+  &__picture {
+    margin-bottom: 300px;
+  }
+}
+
+.background-box {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 740px;
+    left: 0;
+    content: '';
+    background-image: url('../images/milk-background-dt@1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100vw;
+    z-index: 3;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: contents;
+      top: 350px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 130px;
+    padding-bottom: 242px;
+  }
+
+  .how-its-made {
+    &__title {
+      font-size: 26px;
+      margin-bottom: 16px;
+
+      &--ubig {
+        font-size: 48px;
+        margin-bottom: 50px;
+      }
+    }
+
+    &__section {
+      align-items: flex-start;
+      flex-direction: row;
+      padding: 0 18px;
+    }
+
+    &__cow {
+      max-width: 340px;
+    }
+
+    &__text-list {
+      font-size: 14px;
+      line-height: 1.8;
+      padding-left: 17px;
+      padding-right: 0;
+      padding-top: 53px;
+    }
+
+    &__text-item {
+      line-height: 1.8;
+      margin-bottom: 62px;
+
+      &--lower {
+        margin-bottom: 31px;
+      }
+
+      &--grey {
+        gap: 15px;
+      }
+    }
+
+    &__button {
+      font-size: 16px;
+    }
+
+    &__icon-list {
+      display: flex;
+      flex-direction: row;
+      gap: 55px;
+      padding: 0 16px;
+    }
+
+    &__small-icon {
+      margin-bottom: 36px;
+    }
+
+    &__small-numbers {
+      font-size: 48px;
+      margin-bottom: 13px;
+    }
+
+    &__small-text {
+      font-size: 14px;
+    }
+
+    &__collage {
+      transform: translateY(55%);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 125px;
+    padding-bottom: 310px;
+  }
+
+  .how-its-made {
+    &__title {
+      font-size: 30px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+
+      &--ubig {
+        font-size: 58px;
+        margin-bottom: 55px;
+      }
+    }
+
+    &__section {
+      flex-direction: row;
+      padding: 0 107px;
+      margin-bottom: 39px;
+    }
+
+    &__cow {
+      max-width: 516px;
+    }
+
+    &__text-list {
+      font-size: 16px;
+      line-height: 1.8;
+      padding-top: 47px;
+      padding-left: 74px;
+      padding-right: 0;
+    }
+
+    &__text-item {
+      line-height: 1.9;
+      margin-bottom: 41px;
+
+      &--lower {
+        margin-bottom: 35px;
+      }
+
+      &--grey {
+        font-size: 14px;
+        gap: 20px;
+      }
+    }
+
+    &__icon-list {
+      gap: 90px;
+      padding: 0 95px;
+    }
+
+    &__small-icon {
+      margin-bottom: 40px;
+    }
+
+    &__small-numbers {
+      font-size: 58px;
+      margin-bottom: 15px;
+    }
+
+    &__small-text {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    &__collage {
+      transform: translateY(35%);
+    }
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .background-box:before {
+    background-image: url('../images/milk-background-mb@2x.png');
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .background-box {
+    background-image: url('../images/milk-background-dt@1x.png');
+  }
+}

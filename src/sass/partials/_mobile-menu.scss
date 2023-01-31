@@ -1,0 +1,9 @@
+.hamburger {
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .hamburger {
+    display: none;
+  }
+}
