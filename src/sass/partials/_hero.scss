@@ -1,5 +1,7 @@
+.hero {
+  background: $IBgColor;
+}
 .hero-container {
-  background-color: $IBgColor;
   background-image: url(../images/ice-cream_mobile@1.png), url(../images/background-circe.png);
   background-repeat: no-repeat, no-repeat;
   background-position: 117px 36px, 36px 27px;
