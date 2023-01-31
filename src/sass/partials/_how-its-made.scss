@@ -57,20 +57,21 @@
         margin-bottom: 40px;
         position: relative;
         z-index: 99;
-
-        &--grey {
-            color: $textColor;
-        }
     }
 
     &__text-item {
         display: flex;
         flex-direction: column;
         gap: 20px;
+
+        &--grey {
+            color: $textColor;
+        }
     }
 
     &__button {
         cursor: pointer;
+        font-size: 16px;
     }
 
     &__icon-list {
@@ -124,6 +125,11 @@
         @media screen and (min-width: 768px) {
             display: none;
         }
+
+        @media screen and (min-width: 1280px) {
+            display: none;
+            top: 255px;
+        }
     }
 }
 
@@ -146,10 +152,13 @@
             }
         }
 
-
         &__section {
             flex-direction: row;
             padding: 0 16px;
+        }
+
+        &__cow {
+            max-width: 340px;
         }
 
         &__text-list {
@@ -162,8 +171,7 @@
         }
 
         &__text-item {
-            display: flex;
-            flex-direction: column;
+            gap: 25px;
         }
 
         &__icon-list {
@@ -173,9 +181,11 @@
         }
 
         &__small-list {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
+            gap: 13px;
+
+            &--ubigger {
+                row-gap: 36px;
+            }
         }
 
         &__small-numbers {
@@ -188,6 +198,78 @@
 
         &__collage {
             transform: translateY(55%);
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .section {
+        padding-top: 125px;
+        padding-bottom: 310px;
+    }
+
+    .how-its-made {
+
+        &__title {
+            font-size: 30px;
+            margin-bottom: 15px;         
+        
+            &--ubig {
+                font-size: 58px;
+                margin-bottom: 55px;
+            }
+        }
+
+        &__section {
+            align-items: flex-start;
+            flex-direction: row;
+            padding: 0 92px;
+            margin-bottom: 39px;
+        }
+
+        &__cow {
+            max-width: 516px;
+        }
+
+        &__text-list {
+            font-size: 16px;
+            line-height: 1.7;
+            padding-top: 47px;
+            padding-left: 74px;
+            padding-right: 0;
+            gap: 30px;
+            margin: 0;
+        }
+
+        &__text-item {
+            gap: 38px;
+
+            &--grey {
+                font-size: 14px;
+            }
+        }
+
+        &__icon-list {
+            gap: 90px;
+            padding: 0 95px;
+        }
+
+        &__small-list {
+            gap: 16px;
+        }
+
+        &__small-numbers {
+            font-size: 58px;
+        }
+
+        &__small-text {
+            font-size: 14px;
+            line-height: 1.8;       
+        }
+
+        &__collage {
+            transform: translateY(35%);
         }
     }
 }
