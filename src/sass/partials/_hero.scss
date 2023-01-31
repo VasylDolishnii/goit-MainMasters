@@ -45,6 +45,18 @@
 .hero__button {
   font-family: $fontPrimary;
 }
+.hero__milk-vase {
+  display: none;
+}
+.hero__lady_with_icecream {
+  display: none;
+}
+.hero__lorem {
+  display: none;
+}
+.hero__arrow {
+  display: none;
+}
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-container {
     background-image: url(../images/ice-cream_mobile@2.png), url(../images/background-circle@2.png);
