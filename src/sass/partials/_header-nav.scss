@@ -3,6 +3,7 @@
   justify-content: center;
 }
 
+
 .center-nav {
   width: 100%;
   max-width: 1280px;
@@ -35,7 +36,14 @@
     margin-left: 110px;
   }
 
-  @media (max-width: 1280px) {
+  @media (max-width: 767px) {
+    &__btn {
+      display: none;
+    }
+  }
+
+
+  @media (max-width: 1279px) {
     &__list {
       position: absolute;
       width: 1px;
@@ -55,11 +63,20 @@
       padding-top: 37px;
       padding-left: 34px;
     }
+
+    &__btn {
+      position: absolute;
+      right: 34px;
+    }
   }
 
   @media (min-width: 1280px) {
     &__nav {
       padding-left: 46px;
+    }
+
+    &__btn {
+      right: 115px;
     }
   }
 }

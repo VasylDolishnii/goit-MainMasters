@@ -5,6 +5,12 @@
 @media (min-width: 768px) {
   .hamburger {
     padding-top: 37px;
-    padding-right: 20px;
+    padding-right: 240px;
+  }
+
+  @media (min-width: 1280px) {
+    .hamburger {
+      display: none;
+    }
   }
 }
