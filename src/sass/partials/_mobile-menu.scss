@@ -2,15 +2,8 @@
   padding: 0 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
   .hamburger {
-    padding-top: 37px;
-    padding-right: 240px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    .hamburger {
-      display: none;
-    }
+    display: none;
   }
 }
