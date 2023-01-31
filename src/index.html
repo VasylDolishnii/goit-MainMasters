@@ -16,30 +16,16 @@
 
   <!-- END Google Fonts Links -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" type="image/x-icon" href="../src/images/favicon.png" />
-  <link rel="stylesheet" href="index.js" />
-</head>
-
-<body>
-  <header>
-    <section class="section-nav">
-      <div class="center-nav">
-        <include src="./partials/header-nav.html"></include>
-        <include src="./partials/mobile-menu.html"></include>
-      </div>
-    </section>
-  </header>
-  <main>
     <include src="./partials/how-its-made.html"></include>
-  </main>
-  <footer></footer>
-
-  <!-- mobile-menu start /under footer/-->
-  <include src="./partials/mobile-menu-sidebar.html"></include>
-  <!-- mobile-menu end-->
-</body>
-
+  <body>
+    <header>
+      <include src="./partials/mobile-menu.html"></include>
+      <include src="./partials/buttons.html"></include>
+    </header>
+    <main>
+      <include src="./partials/products.html"></include>
+    </main>
+    <footer></footer>
+    <include src="./partials/mobile-menu-sidebar.html"></include>
+  </body>
 </html>
