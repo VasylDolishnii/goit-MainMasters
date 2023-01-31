@@ -1,6 +1,8 @@
 //mobile
+.hero {
+  background: $IBgColor;
+}
 .hero-container {
-  background-color: $IBgColor;
   background-image: url(../images/ice-cream_mobile@1.png), url(../images/background-circe.png);
   background-repeat: no-repeat, no-repeat;
   background-position: 117px 36px, 36px 27px;
@@ -44,6 +46,15 @@
 }
 .hero__button {
   font-family: $fontPrimary;
+}
+.hero__lorem {
+  display: none;
+}
+.hero__milk-vase {
+  display: none;
+}
+.hero__lady_with_icecream {
+  display: none;
 }
 //desktop
 @media (min-width: 1280px) {
@@ -159,16 +170,19 @@
     width: 200px;
     margin-left: 275px;
     padding-bottom: 102px;
+    display: block;
   }
   .hero__milk-vase {
     position: absolute;
     top: 342px;
     left: 77px;
+    display: block;
   }
   .hero__lady_with_icecream {
     position: absolute;
     top: 346px;
     left: 878px;
     z-index: 4;
+    display: block;
   }
 }

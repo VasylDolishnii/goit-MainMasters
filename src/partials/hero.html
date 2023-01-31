@@ -26,28 +26,20 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et
     </p>
-    <picture>
-      <source
-        srcset="
-          ./images/lady_with_icecream-destkop@1.png,
-          ./images/lady_with_icecream-destkop@2.png 2x
-        "
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="
-          ./images/lady_with_icecream-tablet@1.png,
-          ./images/lady_with_icecream-tablet@2.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <img
-        class="hero__lady_with_icecream"
-        src="./images/lady_with_icecream-desktop@1.png"
-        alt="lady-with-icecream"
-      />
-    </picture>
-
-    <img class="hero__milk-vase" src="./images/milk-vase.png" width="188" height="191" />
+    <img
+      srcset="
+        ./images/lady_with_icecream_tablet@1.png  168w,
+        ./images/lady_with_icecream-desktop@1.png 293w
+      "
+      src="./images/lady_with_icecream-desktop@1.png"
+      sizes="(min-width: 1200px) 293px, (min-width: 768px) 168px"
+      class="hero__lady_with_icecream"
+    />
+    <img
+      srcset="./images/milk-vase-desktop.png 124w, ./images/milk-vase-desktop.png 188w"
+      src="./images/milk-vase-desktop.png"
+      sizes="(min-width: 1200px) 188px, (min-width: 768px) 124px"
+      class="hero__milk-vase"
+    />
   </div>
 </section>
