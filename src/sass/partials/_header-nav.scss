@@ -43,7 +43,7 @@
   }
 
 
-  @media (max-width: 1279px) {
+  @media screen and (max-width: 1279px) {
     &__list {
       position: absolute;
       width: 1px;
@@ -58,7 +58,7 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     &__nav {
       padding-top: 37px;
       padding-left: 34px;
