@@ -74,7 +74,6 @@
 
     &__button {
         cursor: pointer;
-        font-size: 16px;
     }
 
     &__icon-list {
@@ -188,6 +187,10 @@
             &--grey {
                 gap: 15px;
             }
+        }
+
+        &__button {
+            font-size: 16px;
         }
 
         &__icon-list {
