@@ -121,7 +121,7 @@
         top: 740px;
         left: 0;
         content: '';
-        background-image: url('../images/milk-background@1x.png');
+        background-image: url('../images/milk-background-dt@1x.png');
         background-size: contain;
         background-repeat: no-repeat;
         height: 100%;
@@ -293,5 +293,23 @@
         &__collage {
             transform: translateY(35%);
         }
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+
+    .background-box:before {
+        background-image: url('../images/milk-background-mb@2x.png');
+    }
+    
+    
+}
+
+@media screen and (min-width: 1280px) {
+
+    .background-box {
+        background-image: url('../images/milk-background-dt@1x.png');
     }
 }
