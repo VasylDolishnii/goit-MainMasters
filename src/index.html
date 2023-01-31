@@ -5,16 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IceCream</title>
-
-    <!-- Google Fonts Links -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- Slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
@@ -25,10 +15,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" type="image/x-icon" href="../src/images/favicon.png" />
     <script defer type="module" src="index.js"></script>
   </head>
-
   <body>
     <header>
       <section class="section-nav">
@@ -39,12 +34,11 @@
       </section>
     </header>
     <main>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/how-its-made.html"></include>
       <include src="./partials/comments.html"></include>
     </main>
-    <footer></footer>
-
-    <!-- mobile-menu start /under footer/-->
+    <footer><include src="./partials/footer.html"></include></footer>
     <include src="./partials/mobile-menu-sidebar.html"></include>
-    <!-- mobile-menu end-->
   </body>
 </html>
