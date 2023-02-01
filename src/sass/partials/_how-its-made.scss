@@ -299,7 +299,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .background-box {
+  .background-box:before {
     background-image: url('../images/milk-background-dt@1x.png');
   }
 }
