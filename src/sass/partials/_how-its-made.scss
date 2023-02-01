@@ -102,11 +102,11 @@
   }
 
   &__collage {
-    
+    height: 122px;
+    width: 364px;
     left: 0;
-    width: 100vw;
-    transform: translateY(79%);
-    width: 100vw;
+    transform: translateY(60%);
+    margin: 0 auto;
     margin-bottom: 111px;
   }
 
@@ -137,7 +137,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-      display: contents;
+      display: block;
       top: 350px;
     }
   }
@@ -216,7 +216,9 @@
     }
 
     &__collage {
-      transform: translateY(55%);
+      margin-bottom: 236px;
+      width: 786px;
+      height: 264px;
     }
   }
 }
@@ -289,9 +291,11 @@
       font-size: 14px;
       line-height: 1.8;
     }
-    
+
     &__collage {
-      transform: translateY(35%);
+      margin-bottom: 339px;
+      width: 1280px;
+      height: 430px;
     }
   }
 }
@@ -311,21 +315,19 @@
 /* Bottom margin fix for collage */
 
 .section {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
+  padding-bottom: 0;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 121px;
     padding-bottom: 0;
+  }
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 121px;
-        padding-bottom: 0;
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 123px;
-        padding-bottom: 0;
-    }
-     
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 123px;
+    padding-bottom: 0;
+  }
 }
-
 
 /*
 .how-its-made__mockup {
@@ -342,17 +344,4 @@
 }
 */
 
-.how-its-made__collage {
-    margin-bottom: 97px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 236px;
-    }
-
-    @media screen and (min-width: 1280px){
-        margin-bottom: 339px;
-    }
-}
-
 /* End fix */
-
