@@ -11,7 +11,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+
+    &--center {
+      align-items: center;
+    }
   }
 
   &__title {
@@ -20,6 +23,7 @@
     font-size: 18px;
     margin-bottom: 15px;
     text-align: center;
+    text-transform: uppercase;
 
     &--ubig {
       color: $IIIColor;
@@ -48,9 +52,9 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 1.6;
-    padding: 0 30px;
     position: relative;
     z-index: 99;
+    max-width: 220px;
   }
 
   &__text-item {
@@ -99,18 +103,23 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.7;
+    max-width: 230px;
   }
 
   &__collage {
-    position: absolute;
+    height: 122px;
+    width: 364px;
     left: 0;
-    width: 100vw;
-    transform: translateY(79%);
+    transform: translateY(60%);
+    margin: 0 auto;
+    margin-bottom: 111px;
   }
 
+  /*
   &__picture {
     margin-bottom: 300px;
-  }
+  } 
+  */
 }
 
 .background-box {
@@ -124,7 +133,7 @@
     background-image: url('../images/milk-background-dt@1x.png');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 50vh;
     width: 100vw;
     z-index: 3;
 
@@ -133,7 +142,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-      display: contents;
+      display: block;
       top: 350px;
     }
   }
@@ -142,10 +151,16 @@
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 130px;
-    padding-bottom: 242px;
+    // padding-bottom: 242px;
   }
 
   .how-its-made {
+    &__container {
+      &--center {
+        align-items: center;
+      }
+    }
+
     &__title {
       font-size: 26px;
       margin-bottom: 16px;
@@ -172,6 +187,7 @@
       padding-left: 17px;
       padding-right: 0;
       padding-top: 53px;
+      max-width: 340px;
     }
 
     &__text-item {
@@ -212,7 +228,9 @@
     }
 
     &__collage {
-      transform: translateY(55%);
+      margin-bottom: 236px;
+      width: 786px;
+      height: 264px;
     }
   }
 }
@@ -224,10 +242,15 @@
   }
 
   .how-its-made {
+    &__container {
+      &--center {
+        align-items: center;
+      }
+    }
+
     &__title {
       font-size: 30px;
       margin-bottom: 15px;
-      text-transform: uppercase;
 
       &--ubig {
         font-size: 58px;
@@ -251,6 +274,7 @@
       padding-top: 47px;
       padding-left: 74px;
       padding-right: 0;
+      max-width: 463px;
     }
 
     &__text-item {
@@ -287,19 +311,55 @@
     }
 
     &__collage {
-      transform: translateY(35%);
+      margin-bottom: 339px;
+      width: 1280px;
+      height: 430px;
     }
   }
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .background-box:before {
+  .background-box::before {
     background-image: url('../images/milk-background-mb@2x.png');
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .background-box {
+  .background-box::before {
     background-image: url('../images/milk-background-dt@1x.png');
   }
 }
+
+/* Bottom margin fix for collage */
+
+.section {
+  margin-bottom: 80px;
+  padding-bottom: 0;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 121px;
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 123px;
+    padding-bottom: 0;
+  }
+}
+
+/*
+.how-its-made__mockup {
+    width: 100vw;
+    min-height: 97px;
+    
+    @media screen and (min-width: 768px) {
+        min-height: 140px;
+    }
+
+    @media screen and (min-height: 1280px) {
+        min-height: 139px;
+    }
+}
+*/
+
+/* End fix */
