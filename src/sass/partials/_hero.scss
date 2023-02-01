@@ -22,8 +22,7 @@
   width: 218px;
   font-family: $fontSecondary;
   font-size: 26px;
-  font-weight: 400;
-  line-height: 29.77px;
+  line-height: 115%;
   letter-spacing: 0.04em;
   text-align: left;
   color: $IColor;
@@ -32,8 +31,7 @@
 .hero__slogan-span {
   font-family: $fontSecondary;
   font-size: 48px;
-  font-weight: 400;
-  line-height: 45.84px;
+  line-height: 95%;
   letter-spacing: 0.04em;
   text-align: left;
   color: $IIIColor;
@@ -84,7 +82,7 @@
     content: '';
     z-index: 3;
   }
-  .hero-container:after {
+  .hero-container::after {
     background-image: url(../images/background-circle_tablet.png);
     position: absolute;
     background-size: 324px 322px;
@@ -107,8 +105,7 @@
     width: 168px;
     font-family: $fontSecondary;
     font-size: 22px;
-    font-weight: 400;
-    line-height: 26px;
+    line-height: 114%;
     letter-spacing: 0.04em;
     text-align: left;
     color: $IColor;
@@ -118,8 +115,7 @@
   .hero__slogan-span {
     font-family: $fontSecondary;
     font-size: 34px;
-    font-weight: 400;
-    line-height: 30px;
+    line-height: 90%;
     letter-spacing: 0.04em;
     text-align: left;
     color: $IIIColor;
@@ -138,8 +134,7 @@
     margin: 0;
     font-family: $fontSecondary;
     font-size: 28px;
-    font-weight: 400;
-    line-height: 32px;
+    line-height: 114%;
     letter-spacing: 0.04em;
     text-align: right;
     color: $IIIColor;
@@ -147,8 +142,7 @@
   .hero__place-span {
     font-family: $fontPrimary;
     font-size: 8px;
-    font-weight: 400;
-    line-height: 18px;
+    line-height: 125%;
     letter-spacing: 0em;
     text-align: right;
     color: $IColor;
@@ -160,7 +154,6 @@
   .hero__lorem {
     font-family: $fontPrimary;
     font-size: 8px;
-    font-weight: 400;
     line-height: 150%;
     letter-spacing: 0em;
     text-align: left;
@@ -183,11 +176,19 @@
     z-index: 4;
     display: block;
   }
-  .hero__arrow {
+
+  .hero__button-arrow {
+    background-image: url(../images/arrow_tablet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $IColor;
+    width: 18px;
+    height: 18px;
+    border-radius: 20px;
+    border: 0;
     position: absolute;
     top: 260px;
     left: 154px;
-    display: block;
   }
 }
 
@@ -215,7 +216,7 @@
     content: '';
     z-index: 3;
   }
-  .hero-container:after {
+  .hero-container::after {
     background-image: url(../images/background-circe.png);
     position: absolute;
     background-size: 538px 538px;
@@ -242,19 +243,17 @@
     width: 277px;
     font-family: $fontSecondary;
     font-size: 38px;
-    font-weight: 400;
-    line-height: 44px;
+    line-height: 115%;
     letter-spacing: 0.04em;
     text-align: left;
-    font-family: Titan One;
+    font-family: $fontSecondary;
     text-align: left;
     color: $IColor;
   }
   .hero__slogan-span {
     font-family: $fontSecondary;
     font-size: 58px;
-    font-weight: 400;
-    line-height: 52px;
+    line-height: 89%;
     letter-spacing: 0.04em;
     text-align: left;
     color: $IIIColor;
@@ -273,8 +272,7 @@
     margin: 0;
     font-family: $fontSecondary;
     font-size: 46px;
-    font-weight: 400;
-    line-height: 53px;
+    line-height: 115%;
     letter-spacing: 0.04em;
     text-align: right;
     color: $IIIColor;
@@ -282,8 +280,7 @@
   .hero__place-span {
     font-family: $fontPrimary;
     font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
+    line-height: 129%;
     letter-spacing: 0em;
     text-align: right;
     color: $IColor;
@@ -295,8 +292,7 @@
   .hero__lorem {
     font-family: $fontPrimary;
     font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
+    line-height: 140%;
     letter-spacing: 0em;
     text-align: left;
     color: $IColor;
@@ -318,10 +314,18 @@
     z-index: 4;
     display: block;
   }
-  .hero__arrow {
+
+  .hero__button-arrow {
+    background-image: url(../images/arrow_desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $IColor;
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+    border: 0;
     position: absolute;
     top: 496px;
     left: 295px;
-    display: block;
   }
 }
