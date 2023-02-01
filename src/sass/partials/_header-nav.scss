@@ -1,10 +1,12 @@
 .header-nav__right {
   display: flex;
   align-items: center;
+  z-index: 4;
 }
 .section-nav {
   display: flex;
   justify-content: center;
+  background: $IBgColor;
 }
 
 .center-nav {
