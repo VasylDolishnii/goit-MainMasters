@@ -1,0 +1,165 @@
+.footer {
+  background-color: $VBgColor;
+
+  &__container {
+    padding: 20px;
+    margin: 0 auto;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      padding-inline: 36px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+      padding: 0 114px;
+    }
+  }
+
+  &__container hr {
+    border: none;
+    border-top: 1px solid $lineColor;
+    margin: 0;
+    width: 100%;
+  }
+
+  &__headline {
+    text-transform: uppercase;
+    width: 234px;
+
+    @media screen and (min-width: 768px) {
+      width: 340px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 474px;
+    }
+  }
+
+  &__headline--primary {
+    font-family: $fontSecondary;
+    color: $IVColor;
+    font-size: 18px;
+    margin-bottom: 17px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 7px;
+      font-size: 26px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+    }
+  }
+
+  &__headline--secondary {
+    font-family: $fontSecondary;
+    color: $IIIColor;
+    font-size: 34px;
+    margin-bottom: 43px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 93px;
+      font-size: 48px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    margin-bottom: 46px;
+    gap: 28px;
+    justify-content: end;
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__contact {
+    text-align: end;
+    margin-bottom: 23px;
+  }
+
+  &__contact--text {
+    font-family: $fontPrimary;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
+  }
+
+  &__contact--phone {
+    color: $IIIColor;
+    font-family: $fontPrimary;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.86;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
+  }
+
+  &__copyrights {
+    text-align: center;
+    color: $textColor;
+    font-family: $fontPrimary;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 9px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding: 10px;
+    }
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+
+    @media screen and (min-width: 768px) {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  &__icon:hover {
+    fill: $btnHoverIIColor;
+  }
+
+  &__container--modifier {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.footer__copyrights br {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
