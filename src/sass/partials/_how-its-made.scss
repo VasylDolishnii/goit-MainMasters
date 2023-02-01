@@ -317,14 +317,17 @@
 /* Bottom margin fix for collage */
 
 .section {
-    margin-bottom: 80px;
+    margin-bottom: 37px;
+    padding-bottom: 0;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 121px;
+        margin-bottom: 78px;
+        padding-bottom: 0;
     }
 
     @media screen and (min-width: 1280px) {
-        margin-bottom: 121px;
+        margin-bottom: 80px;
+        padding-bottom: 0;
     }
      
 }
@@ -332,17 +335,13 @@
 .how-its-made__mockup {
     width: 100vw;
     min-height: 97px;
-}
-
-.section {
-    padding-bottom: 0;
-
+    
     @media screen and (min-width: 768px) {
-        padding-bottom: 0;
+        min-height: 140px;
     }
 
-    @media screen and (min-width: 1280px) {
-        padding-bottom: 0;
+    @media screen and (min-height: 1280px) {
+        min-height: 139px;
     }
 }
 
