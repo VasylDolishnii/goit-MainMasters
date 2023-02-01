@@ -1,6 +1,8 @@
 //mobile
+
 .hero {
   background: $IBgColor;
+  transform: translateY(-1px);
 }
 .hero-container {
   background-image: url(../images/ice-cream_mobile@1.png), url(../images/background-circe.png);
@@ -12,6 +14,7 @@
 .hero__slogan-buttons {
   padding-top: 133px;
   padding-bottom: 160px;
+  padding-left: 0;
 }
 .hero__slogan {
   text-transform: uppercase;
@@ -56,17 +59,147 @@
 .hero__lady_with_icecream {
   display: none;
 }
+.hero__arrow {
+  display: none;
+}
+//tabet
+@media (min-width: 768px) {
+  .hero-container {
+    background-color: $IBgColor;
+
+    background-image: url(../images/ellipse.png), url(../images/ellipse.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 730px 9px, 730px 75px;
+    background-size: 16px 16px, 16px 16px;
+    position: relative;
+  }
+  .hero-container::before {
+    background-image: url(../images/ice-cream_tablet.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 336px;
+    width: 100vw;
+    top: -23px;
+    left: 378px;
+    content: '';
+    z-index: 3;
+  }
+  .hero-container:after {
+    background-image: url(../images/background-circle_tablet.png);
+    position: absolute;
+    background-size: 324px 322px;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100vw;
+    top: -42px;
+    left: 307px;
+    content: '';
+    z-index: 2;
+  }
+  .hero__slogan-buttons {
+    padding-top: 15px;
+    padding-bottom: 66px;
+    padding-left: 14px;
+  }
+  .hero__slogan {
+    text-transform: uppercase;
+    height: 80px;
+    width: 168px;
+    font-family: $fontSecondary;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: $IColor;
+    margin-bottom: 20px;
+    margin-right: 495px;
+  }
+  .hero__slogan-span {
+    font-family: $fontSecondary;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: $IIIColor;
+  }
+  .hero__numbers {
+    display: flex;
+    align-items: baseline;
+  }
+  .hero__places {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__place {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: $fontSecondary;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    text-align: right;
+    color: $IIIColor;
+  }
+  .hero__place-span {
+    font-family: $fontPrimary;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: $IColor;
+    margin-bottom: 18px;
+  }
+  .hero__place-span--bottom {
+    margin-bottom: 0;
+  }
+  .hero__lorem {
+    font-family: $fontPrimary;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $IColor;
+    width: 114px;
+    margin-left: 134px;
+    padding-bottom: 59px;
+    display: block;
+  }
+  .hero__milk-vase {
+    position: absolute;
+    top: 158px;
+    left: 34px;
+    display: block;
+  }
+  .hero__lady_with_icecream {
+    position: absolute;
+    top: 179px;
+    left: 566px;
+    z-index: 4;
+    display: block;
+  }
+  .hero__arrow {
+    position: absolute;
+    top: 260px;
+    left: 154px;
+    display: block;
+  }
+}
+
 //desktop
 @media (min-width: 1280px) {
   .hero-container {
     background-color: $IBgColor;
-    background-image: none;
 
-    // background-image: url(../images/ice-cream_destkop@1.png), url(../images/background-circe.png),
-    //   url(../images/ellipse.png), url(../images/ellipse.png);
-    // background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    // background-position: 594px 21px, 475px -21px, 1153px 74px, 1153px 166px;
-    // background-size: auto auto, auto auto, auto auto, auto auto;
+    background-image: url(../images/ellipse.png), url(../images/ellipse.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 1153px 74px, 1153px 166px;
+    background-size: auto auto, auto auto;
     position: relative;
   }
 
@@ -183,6 +316,12 @@
     top: 346px;
     left: 878px;
     z-index: 4;
+    display: block;
+  }
+  .hero__arrow {
+    position: absolute;
+    top: 496px;
+    left: 295px;
     display: block;
   }
 }
