@@ -48,6 +48,12 @@ line-height: 186%;
 letter-spacing: 0.04em;
 color: $IIColor;
 margin-bottom: 10px;
+@media screen and (min-width: 768px) {
+  font-size: 14px;
+}
+@media screen and (min-width: 1280px) {
+  font-size: 16px;
+}
 }
 .cafe {
 width: 80px;
@@ -59,7 +65,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 letter-spacing: 0.04em;
-font-family: 'DM Sans';
+font-family: $fontPrimary;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
@@ -67,9 +73,11 @@ line-height: 186%;
 border: none;
 margin-bottom: 25px;
 @media screen and (min-width: 768px) {
+font-size: 16px;
 margin-bottom: 30px;
 @media screen and (min-width: 1280px) {
-    margin-bottom: 32px;
+margin-bottom: 32px;
+
 }
 }
 }
@@ -90,6 +98,13 @@ font-size: 12px;
 line-height: 186%;
 border: none;
 margin-bottom: 25px;
+@media screen and (min-width: 768px) {
+font-size: 16px;
+margin-bottom: 30px;
+@media screen and (min-width: 1280px) {
+margin-bottom: 32px;
+  }
+  }
 }
 .places-text {
 color: $textColor;
@@ -98,10 +113,16 @@ font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 18px;
+@media screen and (min-width: 768px) {
+  font-size: 14px;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
 }
 .contact-link {
-    text-decoration: none;
-    color: $textColor;
+text-decoration: none;
+color: $textColor;
 }
 .places-open {
 font-family: $fontPrimary;
@@ -111,6 +132,12 @@ font-size: 12px;
 line-height: 186%;
 letter-spacing: 0.04em;
 color: $IIColor;
+@media screen and (min-width: 768px) {
+  font-size: 14px;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
 }
 .places-hour {
 font-family: $fontPrimary;
@@ -120,12 +147,12 @@ font-size: 12px;
 line-height: 186%;
 color: $IVColor;
 margin-bottom: 10px;
-/* &::after {
-bottom: -32px;
-content: "";
-height: 1px;
-background-color: #E1E1E1;
-} */
+@media screen and (min-width: 768px) {
+  font-size: 14px;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
 }
 .places-contact {
 font-family: $fontPrimary;
@@ -136,6 +163,12 @@ line-height: 18px;
 color: $textColor;
 display: flex;
 flex-direction: column;
+@media screen and (min-width: 768px) {
+  font-size: 14px;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
 }
 .places-box {
  list-style-type: none;
