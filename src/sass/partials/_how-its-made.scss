@@ -102,14 +102,12 @@
   }
 
   &__collage {
-
-    /*
-    position: absolute;
+    
     left: 0;
     width: 100vw;
     transform: translateY(79%);
-    */
     width: 100vw;
+    margin-bottom: 111px;
   }
 
   /*
@@ -148,7 +146,7 @@
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 130px;
-    padding-bottom: 242px;
+    // padding-bottom: 242px;
   }
 
   .how-its-made {
@@ -217,11 +215,9 @@
       font-size: 14px;
     }
 
-    /*
     &__collage {
       transform: translateY(55%);
     }
-    */
   }
 }
 
@@ -294,11 +290,9 @@
       line-height: 1.8;
     }
     
-    /*
     &__collage {
       transform: translateY(35%);
     }
-    */
   }
 }
 
@@ -317,20 +311,21 @@
 /* Bottom margin fix for collage */
 
 .section {
-    margin-bottom: 37px;
+    margin-bottom: 80px;
     padding-bottom: 0;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 78px;
+        margin-bottom: 121px;
         padding-bottom: 0;
     }
 
     @media screen and (min-width: 1280px) {
-        margin-bottom: 80px;
+        margin-bottom: 123px;
         padding-bottom: 0;
     }
      
 }
+
 
 /*
 .how-its-made__mockup {
@@ -347,15 +342,15 @@
 }
 */
 
-.how-its-made__icon-list {
+.how-its-made__collage {
     margin-bottom: 97px;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 140px;
+        margin-bottom: 236px;
     }
 
     @media screen and (min-width: 1280px){
-        margin-bottom: 139px;
+        margin-bottom: 339px;
     }
 }
 
