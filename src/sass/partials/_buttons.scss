@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   transition-duration: 250ms;
+  cursor: pointer;
 
   &__span--arrow {
     padding-right: 15px;
@@ -83,7 +84,6 @@
 
 @media screen and (min-width: 1280px) {
   .button {
-
     &__red,
     &__white {
       &--hero {
