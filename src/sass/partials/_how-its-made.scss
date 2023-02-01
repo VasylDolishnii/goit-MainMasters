@@ -102,15 +102,21 @@
   }
 
   &__collage {
+
+    /*
     position: absolute;
     left: 0;
     width: 100vw;
     transform: translateY(79%);
+    */
+    width: 100vw;
   }
 
+  /*
   &__picture {
     margin-bottom: 300px;
-  }
+  } 
+  */
 }
 
 .background-box {
@@ -124,7 +130,7 @@
     background-image: url('../images/milk-background-dt@1x.png');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     z-index: 3;
 
@@ -211,9 +217,11 @@
       font-size: 14px;
     }
 
+    /*
     &__collage {
       transform: translateY(55%);
     }
+    */
   }
 }
 
@@ -285,10 +293,12 @@
       font-size: 14px;
       line-height: 1.8;
     }
-
+    
+    /*
     &__collage {
       transform: translateY(35%);
     }
+    */
   }
 }
 
@@ -303,3 +313,38 @@
     background-image: url('../images/milk-background-dt@1x.png');
   }
 }
+
+/* Bottom margin fix for collage */
+
+.section {
+    margin-bottom: 80px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 121px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 121px;
+    }
+     
+}
+
+.how-its-made__mockup {
+    width: 100vw;
+    min-height: 97px;
+}
+
+.section {
+    padding-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 0;
+    }
+}
+
+/* End fix */
+
