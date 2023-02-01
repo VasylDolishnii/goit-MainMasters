@@ -332,6 +332,7 @@
      
 }
 
+/*
 .how-its-made__mockup {
     width: 100vw;
     min-height: 97px;
@@ -342,6 +343,19 @@
 
     @media screen and (min-height: 1280px) {
         min-height: 139px;
+    }
+}
+*/
+
+.how-its-made__icon-list {
+    margin-bottom: 97px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 140px;
+    }
+
+    @media screen and (min-width: 1280px){
+        margin-bottom: 139px;
     }
 }
 
