@@ -4,7 +4,6 @@
   &__title {
     font-family: $fontSecondary;
     text-align: center;
-    font-weight: 400;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -56,6 +55,15 @@
   }
 }
 
+.cow {
+  padding-left: 20px;
+  padding-right: 20px;
+  object-fit: contain;
+  &__img {
+    object-fit: contain;
+  }
+}
+
 .milk-background-320 {
   background-image: url('/src/images/milk-320@1.png');
   background-repeat: no-repeat;
@@ -75,7 +83,6 @@
     font-family: $fontSecondary;
     text-transform: uppercase;
     color: $IIIColor;
-    font-weight: 400;
     font-size: 36px;
     line-height: 100%;
     letter-spacing: 4%;
