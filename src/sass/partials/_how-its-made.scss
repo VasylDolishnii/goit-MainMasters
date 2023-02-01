@@ -48,9 +48,9 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 1.6;
-    padding: 0 30px;
     position: relative;
     z-index: 99;
+    max-width: 220px;
   }
 
   &__text-item {
@@ -176,6 +176,7 @@
       padding-left: 17px;
       padding-right: 0;
       padding-top: 53px;
+      max-width: 340px;
     }
 
     &__text-item {
@@ -257,6 +258,7 @@
       padding-top: 47px;
       padding-left: 74px;
       padding-right: 0;
+      max-width: 463px;
     }
 
     &__text-item {
