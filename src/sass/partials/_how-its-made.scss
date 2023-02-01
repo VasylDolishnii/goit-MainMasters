@@ -327,6 +327,7 @@
 @media screen and (min-width: 1280px) {
   .background-box::before {
     background-image: url('../images/milk-background-dt@1x.png');
+    background-size: 100% 100%;
   }
 }
 
