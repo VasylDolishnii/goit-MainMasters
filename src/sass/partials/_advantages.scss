@@ -47,46 +47,46 @@
     margin-bottom: 19px;
 
     &--milk {
-        position: relative;
+      position: relative;
 
-        &::before {
-            content: '';
-            background-image: url('../images/milk.png');
-            background-repeat: no-repeat;
-            height: 50px;
-            width: 50px;
-            display: block;
-            margin-bottom: 16px;
-        }
+      &::before {
+        content: '';
+        background-image: url('../images/milk.png');
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 50px;
+        display: block;
+        margin-bottom: 16px;
       }
+    }
 
     &--fruit {
-        position: relative;
+      position: relative;
 
-        &::before {
-            content: '';
-            background-image: url('../images/fruit.png');
-            background-repeat: no-repeat;
-            height: 50px;
-            width: 50px;
-            display: block;
-            margin-bottom: 16px;
-        }
+      &::before {
+        content: '';
+        background-image: url('../images/fruit.png');
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 50px;
+        display: block;
+        margin-bottom: 16px;
       }
+    }
 
     &--heart {
-        position: relative;
+      position: relative;
 
-        &::before {
-            content: '';
-            background-image: url('../images/heart.png');
-            background-repeat: no-repeat;
-            height: 50px;
-            width: 50px;
-            display: block;
-            margin-bottom: 16px;
-        }
+      &::before {
+        content: '';
+        background-image: url('../images/heart.png');
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 50px;
+        display: block;
+        margin-bottom: 16px;
       }
+    }
   }
 
   &__small-text {
@@ -132,7 +132,6 @@
       padding: 0 18px;
     }
 
-
     &__icon-list {
       display: flex;
       flex-direction: row;
@@ -148,24 +147,21 @@
       font-size: 48px;
       margin-bottom: 13px;
 
-    &--milk {
-
+      &--milk {
         &::before {
-            margin-bottom: 36px;
+          margin-bottom: 36px;
         }
       }
 
-    &--fruit {
-
+      &--fruit {
         &::before {
-            margin-bottom: 36px;
+          margin-bottom: 36px;
         }
       }
 
-    &--heart {
-
+      &--heart {
         &::before {
-            margin-bottom: 36px;
+          margin-bottom: 36px;
         }
       }
     }
@@ -214,24 +210,21 @@
       font-size: 58px;
       margin-bottom: 15px;
 
-    &--milk {
-
+      &--milk {
         &::before {
-            margin-bottom: 40px;
+          margin-bottom: 40px;
         }
       }
 
-    &--fruit {
-
+      &--fruit {
         &::before {
-            margin-bottom: 40px;
+          margin-bottom: 40px;
         }
       }
 
-    &--heart {
-
+      &--heart {
         &::before {
-            margin-bottom: 40px;
+          margin-bottom: 40px;
         }
       }
     }
@@ -269,14 +262,14 @@
 /* End fix */
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
