@@ -1,4 +1,4 @@
-.places-container {
+.places__container {
     width: 100%;
     margin: 0 auto;
     padding-bottom: 100px;
@@ -13,7 +13,7 @@
     }
 }
 
-.places-section {
+.places__section {
     background-color: $VBgColor;
   @media screen and (min-width: 1280px) {    
     background: url("../images/pic.png");
@@ -21,7 +21,7 @@
     background-color: $VBgColor;
 }
 }
-.places-block {
+.places__box {
   height: 100%;
   width: 220px;
   color: $IIColor;
@@ -38,7 +38,7 @@
 }
 }
 
-.places-city {
+.places__city {
 font-family: $fontPrimary;
 font-style: normal;
 font-weight: 500;
@@ -49,12 +49,13 @@ color: $IIColor;
 margin-bottom: 10px;
 @media screen and (min-width: 768px) {
   font-size: 14px;
+  margin-bottom: 14px;
 }
 @media screen and (min-width: 1280px) {
   font-size: 16px;
 }
 }
-.cafe {
+.places__cafe {
 width: 80px;
 height: 16px;
 background: $IIBgColor;
@@ -80,7 +81,7 @@ margin-bottom: 32px;
 }
 }
 }
-.foodtrack {
+.places__foodtrack {
 width: 130px;
 height: 16px;
 background: $IIIBgColor;
@@ -105,7 +106,7 @@ margin-bottom: 32px;
   }
   }
 }
-.places-text {
+.places__text {
 color: $textColor;
 font-family: $fontPrimary;
 font-style: normal;
@@ -114,16 +115,18 @@ font-size: 12px;
 line-height: 18px;
 @media screen and (min-width: 768px) {
   font-size: 14px;
+  line-height: 23px;
   @media screen and (min-width: 1280px) {
     font-size: 16px;
+    line-height: 29px;
   }
 }
 }
-.contact-link {
+.places__contact--link{
 text-decoration: none;
 color: $textColor;
 }
-.places-open {
+.places__days {
 font-family: $fontPrimary;
 font-style: normal;
 font-weight: 500;
@@ -138,7 +141,7 @@ color: $IIColor;
   }
 }
 }
-.places-hour {
+.places__hours {
 font-family: $fontPrimary;
 font-style: normal;
 font-weight: 500;
@@ -148,12 +151,13 @@ color: $IVColor;
 margin-bottom: 10px;
 @media screen and (min-width: 768px) {
   font-size: 14px;
+  margin-bottom: 16px;
   @media screen and (min-width: 1280px) {
     font-size: 16px;
   }
 }
 }
-.places-contact {
+.places__contact {
 font-family: $fontPrimary;
 font-style: normal;
 font-weight: 500;
@@ -164,15 +168,17 @@ display: flex;
 flex-direction: column;
 @media screen and (min-width: 768px) {
   font-size: 14px;
+  line-height: 26px;
   @media screen and (min-width: 1280px) {
     font-size: 16px;
+    line-height: 30px;
   }
 }
 }
-.places-box {
+.places__list {
  list-style-type: none;
 }
-.places-ul {
+.places__ul {
   margin-top: 86px;  
   display: flex;
   flex-direction: column;
@@ -191,7 +197,7 @@ flex-direction: column;
   }
 }
 }
-.text-line {
+.places__text--line {
     background-color: $lineColor;
     margin: 25px 0;
     border: none;
@@ -203,28 +209,22 @@ flex-direction: column;
 }
     }
 }
-.places-button {
+.places__buttons--list {
 list-style-type: none;
 }
-.places-button-red {
-list-style-type: none;
-}
-.places-buttons-list {
+.places__buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   justify-content: center;
   transform: translateY(-30%);
-  // margin-top: 54px;
   @media screen and (min-width: 768px) {
   flex-direction: row;
   transform: translateY(-20%);
-  // margin-top: 81px;
   @media screen and (min-width: 1280px) {
     flex-direction: row;
     transform: translateY(-35%);
-    // margin-top: 86px;
 }
 }
 }

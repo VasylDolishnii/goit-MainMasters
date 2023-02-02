@@ -1,6 +1,6 @@
 .section {
   padding-top: 125px;
-  padding-bottom: 145px;
+  padding-bottom: 39px;
   background-color: $VBgColor;
   line-height: 1.2;
   margin: 0 auto;
@@ -37,7 +37,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 46px;
   }
 
   &__cow {
@@ -76,36 +75,8 @@
     cursor: pointer;
   }
 
-  &__icon-list {
-    display: flex;
-    flex-direction: column;
-    gap: 38px;
-  }
 
-  &__small-list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__small-icon {
-    margin-bottom: 16px;
-  }
-
-  &__small-numbers {
-    font-size: 36px;
-    color: $IIIColor;
-    font-family: $fontSecondary;
-    margin-bottom: 19px;
-  }
-
-  &__small-text {
-    color: $IIColor;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.7;
-    max-width: 230px;
-  }
-
+  /* === wstawione do partials collage 
   &__collage {
     height: 122px;
     width: 364px;
@@ -114,6 +85,7 @@
     margin: 0 auto;
     margin-bottom: 111px;
   }
+  === */
 
   /*
   &__picture {
@@ -122,36 +94,10 @@
   */
 }
 
-.background-box {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    top: 740px;
-    left: 0;
-    content: '';
-    background-image: url('../images/milk-background-dt@1x.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 70vh;
-    width: 100%;
-    z-index: 3;
-
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
-
-    @media screen and (min-width: 1280px) {
-      display: block;
-      top: 250px;
-    }
-  }
-}
-
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 130px;
-    // padding-bottom: 242px;
+    padding-bottom: 66px;
   }
 
   .how-its-made {
@@ -184,7 +130,7 @@
     &__text-list {
       font-size: 14px;
       line-height: 1.8;
-      padding-left: 17px;
+      // padding-left: 17px;
       padding-right: 0;
       padding-top: 53px;
       max-width: 340px;
@@ -207,38 +153,20 @@
       font-size: 16px;
     }
 
-    &__icon-list {
-      display: flex;
-      flex-direction: row;
-      gap: 55px;
-      padding: 0 16px;
-    }
-
-    &__small-icon {
-      margin-bottom: 36px;
-    }
-
-    &__small-numbers {
-      font-size: 48px;
-      margin-bottom: 13px;
-    }
-
-    &__small-text {
-      font-size: 14px;
-    }
-
+    /* wstawione do partials gallery
     &__collage {
       margin-bottom: 236px;
       width: 786px;
       height: 264px;
     }
+    */
   }
 }
 
 @media screen and (min-width: 1280px) {
   .section {
     padding-top: 125px;
-    padding-bottom: 310px;
+    padding-bottom: 39px;
   }
 
   .how-its-made {
@@ -261,7 +189,7 @@
     &__section {
       flex-direction: row;
       padding: 0 107px;
-      margin-bottom: 39px;
+      gap: 74px;
     }
 
     &__cow {
@@ -272,7 +200,7 @@
       font-size: 16px;
       line-height: 1.8;
       padding-top: 47px;
-      padding-left: 74px;
+      // padding-left: 74px;
       padding-right: 0;
       max-width: 463px;
     }
@@ -291,47 +219,79 @@
       }
     }
 
-    &__icon-list {
-      gap: 90px;
-      padding: 0 95px;
-    }
-
-    &__small-icon {
-      margin-bottom: 40px;
-    }
-
-    &__small-numbers {
-      font-size: 58px;
-      margin-bottom: 15px;
-    }
-
-    &__small-text {
-      font-size: 14px;
-      line-height: 1.8;
-    }
-
+    /* wstawione do partials collage
     &__collage {
       margin-bottom: 339px;
       width: 1280px;
       height: 430px;
-    }
+    } */
   }
 }
 
+.background-box {
+  background-image: url('../images/milk-background-dt@1x.png');
+  background-position: left 735px;
+  background-repeat: no-repeat;
+  background-size: 100% 150px;
+  /* position: relative;
+
+  &::before {
+    position: absolute;
+    top: 740px;
+    left: 0;
+    content: '';
+    background-image: url('../images/milk-background-dt@1x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100vw;
+    z-index: 3;
+    
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: block;
+      top: 250px;
+    }
+  }
+  */
+  @media screen and (min-width: 480px) {
+  background-position: left 645px;
+  background-size: 100% 225px;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/milk-background-dt@1x.png');
+    background-position: left 340px;
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+  }
+
+  @media screen and (min-width: 2000px) {
+    background-position: left 220px;
+    background-size: 100% 700px;
+  }
+
+  @media screen and (min-width: 3000px) {
+    background-position: left 200px;
+    background-size: 100% 800px;
+  }
+}
+
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .background-box::before {
+  .background-box {
     background-image: url('../images/milk-background-mb@2x.png');
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .background-box::before {
-    background-image: url('../images/milk-background-dt@1x.png');
-    background-size: cover;
-  }
-}
-
-/* Bottom margin fix for collage */
+/* Bottom margin fix for collage 
 
 .section {
   margin-bottom: 80px;
@@ -347,6 +307,8 @@
     padding-bottom: 0;
   }
 }
+
+*/
 
 /*
 .how-its-made__mockup {
