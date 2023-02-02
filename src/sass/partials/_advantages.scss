@@ -16,14 +16,6 @@
     }
   }
 
-  &__section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 46px;
-  }
-
   &__icon-list {
     display: flex;
     flex-direction: column;
@@ -105,11 +97,6 @@
     margin-bottom: 111px;
   }
 
-  /*
-  &__picture {
-    margin-bottom: 300px;
-  } 
-  */
 }
 
 @media screen and (min-width: 768px) {
@@ -119,12 +106,6 @@
       &--center {
         align-items: center;
       }
-    }
-
-    &__section {
-      align-items: flex-start;
-      flex-direction: row;
-      padding: 0 18px;
     }
 
     &__icon-list {
@@ -180,12 +161,6 @@
       &--center {
         align-items: center;
       }
-    }
-
-    &__section {
-      flex-direction: row;
-      padding: 0 107px;
-      margin-bottom: 39px;
     }
 
     &__icon-list {
