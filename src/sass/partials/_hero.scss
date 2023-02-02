@@ -47,6 +47,8 @@
 }
 .hero__button {
   font-family: $fontPrimary;
+  position: relative;
+  z-index: 5;
 }
 .hero__lorem {
   display: none;
@@ -189,6 +191,11 @@
     position: absolute;
     top: 260px;
     left: 154px;
+    z-index: 5;
+  }
+  .hero__button-arrow:hover,
+  .hero__button-arrow:focus {
+    cursor: pointer;
   }
 }
 
@@ -327,5 +334,9 @@
     position: absolute;
     top: 496px;
     left: 295px;
+  }
+  .hero__button-arrow:hover,
+  .hero__button-arrow:focus {
+    cursor: pointer;
   }
 }
