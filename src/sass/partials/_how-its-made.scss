@@ -60,6 +60,12 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 23px;
+    transition: all 0.25s linear;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
 
     &--lower {
       margin-bottom: 31px;
@@ -74,7 +80,6 @@
   &__button {
     cursor: pointer;
   }
-
 
   /* === wstawione do partials collage 
   &__collage {
@@ -258,8 +263,8 @@
   }
   */
   @media screen and (min-width: 480px) {
-  background-position: left 645px;
-  background-size: 100% 225px;
+    background-position: left 645px;
+    background-size: 100% 225px;
   }
 
   @media screen and (min-width: 768px) {
@@ -283,7 +288,6 @@
     background-size: 100% 800px;
   }
 }
-
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .background-box {

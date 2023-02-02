@@ -21,6 +21,7 @@
     &:hover,
     &:focus {
       background-color: $btnHoverIIColor;
+      transform: translateY(-3px);
     }
 
     & svg {
@@ -35,6 +36,7 @@
     &:hover,
     &:focus {
       background-color: $btnHoverIColor;
+      transform: translateY(-3px);
     }
 
     & svg {
