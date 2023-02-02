@@ -1,0 +1,282 @@
+.section {
+  padding-top: 39px;
+  padding-bottom: 145px;
+  background-color: $VBgColor;
+  line-height: 1.2;
+  margin: 0 auto;
+}
+
+.advantages {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--center {
+      align-items: center;
+    }
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 46px;
+  }
+
+  &__icon-list {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+
+  &__small-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__small-icon {
+    margin-bottom: 16px;
+  }
+
+  &__small-numbers {
+    font-size: 36px;
+    color: $IIIColor;
+    font-family: $fontSecondary;
+    margin-bottom: 19px;
+
+    &--milk {
+        position: relative;
+
+        &::before {
+            content: '';
+            background-image: url('../images/milk.png');
+            background-repeat: no-repeat;
+            height: 50px;
+            width: 50px;
+            display: block;
+            margin-bottom: 16px;
+        }
+      }
+
+    &--fruit {
+        position: relative;
+
+        &::before {
+            content: '';
+            background-image: url('../images/fruit.png');
+            background-repeat: no-repeat;
+            height: 50px;
+            width: 50px;
+            display: block;
+            margin-bottom: 16px;
+        }
+      }
+
+    &--heart {
+        position: relative;
+
+        &::before {
+            content: '';
+            background-image: url('../images/heart.png');
+            background-repeat: no-repeat;
+            height: 50px;
+            width: 50px;
+            display: block;
+            margin-bottom: 16px;
+        }
+      }
+  }
+
+  &__small-text {
+    color: $IIColor;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    max-width: 230px;
+  }
+
+  &__collage {
+    height: 122px;
+    width: 364px;
+    left: 0;
+    transform: translateY(60%);
+    margin: 0 auto;
+    margin-bottom: 111px;
+  }
+
+  /*
+  &__picture {
+    margin-bottom: 300px;
+  } 
+  */
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    // padding-bottom: 242px;
+  }
+
+  .advantages {
+    &__container {
+      &--center {
+        align-items: center;
+      }
+    }
+
+    &__section {
+      align-items: flex-start;
+      flex-direction: row;
+      padding: 0 18px;
+    }
+
+
+    &__icon-list {
+      display: flex;
+      flex-direction: row;
+      gap: 55px;
+      padding: 0 16px;
+    }
+
+    &__small-icon {
+      margin-bottom: 36px;
+    }
+
+    &__small-numbers {
+      font-size: 48px;
+      margin-bottom: 13px;
+
+    &--milk {
+
+        &::before {
+            margin-bottom: 36px;
+        }
+      }
+
+    &--fruit {
+
+        &::before {
+            margin-bottom: 36px;
+        }
+      }
+
+    &--heart {
+
+        &::before {
+            margin-bottom: 36px;
+        }
+      }
+    }
+
+    &__small-text {
+      font-size: 14px;
+    }
+
+    &__collage {
+      margin-bottom: 236px;
+      width: 786px;
+      height: 264px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 39px;
+    padding-bottom: 310px;
+  }
+
+  .advantages {
+    &__container {
+      &--center {
+        align-items: center;
+      }
+    }
+
+    &__section {
+      flex-direction: row;
+      padding: 0 107px;
+      margin-bottom: 39px;
+    }
+
+    &__icon-list {
+      gap: 90px;
+      padding: 0 95px;
+    }
+
+    &__small-icon {
+      margin-bottom: 40px;
+    }
+
+    &__small-numbers {
+      font-size: 58px;
+      margin-bottom: 15px;
+
+    &--milk {
+
+        &::before {
+            margin-bottom: 40px;
+        }
+      }
+
+    &--fruit {
+
+        &::before {
+            margin-bottom: 40px;
+        }
+      }
+
+    &--heart {
+
+        &::before {
+            margin-bottom: 40px;
+        }
+      }
+    }
+
+    &__small-text {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    &__collage {
+      margin-bottom: 339px;
+      width: 1280px;
+      height: 430px;
+    }
+  }
+}
+
+/* Bottom margin fix for collage */
+
+.section {
+  margin-bottom: 80px;
+  padding-bottom: 145px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 121px;
+    padding-bottom: 242px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 123px;
+    padding-bottom: 310px;
+  }
+}
+
+/* End fix */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
