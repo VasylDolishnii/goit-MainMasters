@@ -1,0 +1,20 @@
+.collage {
+  height: 122px;
+  width: 364px;
+  left: 0;
+  transform: translateY(-105.5%);
+  margin: 0 auto;
+  margin-bottom: -100px;
+
+  @media screen and (min-width: 768px) {
+    width: 786px;
+    height: 264px;
+    transform: translateY(-86%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    height: 430px;
+    transform: translateY(-68.5%);
+  }
+}
