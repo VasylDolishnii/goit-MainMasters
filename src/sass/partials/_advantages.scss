@@ -1,5 +1,4 @@
-.section {
-  padding-top: 39px;
+.adv-section {
   padding-bottom: 145px;
   background-color: $VBgColor;
   line-height: 1.2;
@@ -114,10 +113,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .section {
-    padding-top: 60px;
-    // padding-bottom: 242px;
-  }
 
   .advantages {
     &__container {
@@ -179,11 +174,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .section {
-    padding-top: 39px;
-    padding-bottom: 310px;
-  }
-
+  
   .advantages {
     &__container {
       &--center {
@@ -244,7 +235,7 @@
 
 /* Bottom margin fix for collage */
 
-.section {
+.adv-section {
   margin-bottom: 80px;
   padding-bottom: 145px;
 

@@ -1,6 +1,6 @@
 .section {
   padding-top: 125px;
-  padding-bottom: 145px;
+  padding-bottom: 39px;
   background-color: $VBgColor;
   line-height: 1.2;
   margin: 0 auto;
@@ -37,7 +37,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 46px;
   }
 
   &__cow {
@@ -76,6 +75,7 @@
     cursor: pointer;
   }
 
+
   /* === wstawione do partials collage 
   &__collage {
     height: 122px;
@@ -106,7 +106,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     height: 70vh;
-    width: 100%;
+    width: 100vw;
     z-index: 3;
 
     @media screen and (min-width: 768px) {
@@ -123,7 +123,7 @@
 @media screen and (min-width: 768px) {
   .section {
     padding-top: 130px;
-    // padding-bottom: 242px;
+    padding-bottom: 66px;
   }
 
   .how-its-made {
@@ -192,6 +192,7 @@
 @media screen and (min-width: 1280px) {
   .section {
     padding-top: 125px;
+    padding-bottom: 39px;
   }
 
   .how-its-made {
