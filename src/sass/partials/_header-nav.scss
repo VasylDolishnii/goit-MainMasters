@@ -11,20 +11,25 @@
 
 .center-nav {
   width: 100%;
-  max-width: 1280px;
+  max-width: 480px;
   justify-content: space-between;
   align-items: center;
   display: flex;
   padding: 4px 0px 0px 20px;
 }
+.logo {
+  cursor: pointer;
+}
 @media screen and (min-width: 1280px) {
   .center-nav {
     padding: 37px 115px 0px 46px;
+    max-width: 1280px;
   }
 }
 @media screen and (max-width: 1279px) and (min-width: 768px) {
   .center-nav {
     padding: 37px 34px 0px;
+    max-width: 768px;
   }
 }
 
