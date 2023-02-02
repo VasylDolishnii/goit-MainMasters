@@ -76,35 +76,6 @@
     cursor: pointer;
   }
 
-  &__icon-list {
-    display: flex;
-    flex-direction: column;
-    gap: 38px;
-  }
-
-  &__small-list {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__small-icon {
-    margin-bottom: 16px;
-  }
-
-  &__small-numbers {
-    font-size: 36px;
-    color: $IIIColor;
-    font-family: $fontSecondary;
-    margin-bottom: 19px;
-  }
-
-  &__small-text {
-    color: $IIColor;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.7;
-    max-width: 230px;
-  }
   /* === wstawione do partials collage 
   &__collage {
     height: 122px;
@@ -208,25 +179,6 @@
       font-size: 16px;
     }
 
-    &__icon-list {
-      display: flex;
-      flex-direction: row;
-      gap: 55px;
-      padding: 0 16px;
-    }
-
-    &__small-icon {
-      margin-bottom: 36px;
-    }
-
-    &__small-numbers {
-      font-size: 48px;
-      margin-bottom: 13px;
-    }
-
-    &__small-text {
-      font-size: 14px;
-    }
     /* wstawione do partials gallery
     &__collage {
       margin-bottom: 236px;
@@ -292,24 +244,6 @@
       }
     }
 
-    &__icon-list {
-      gap: 90px;
-      padding: 0 95px;
-    }
-
-    &__small-icon {
-      margin-bottom: 40px;
-    }
-
-    &__small-numbers {
-      font-size: 58px;
-      margin-bottom: 15px;
-    }
-
-    &__small-text {
-      font-size: 14px;
-      line-height: 1.8;
-    }
     /* wstawione do partials collage
     &__collage {
       margin-bottom: 339px;
