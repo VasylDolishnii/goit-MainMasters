@@ -1,32 +1,19 @@
-<!-- TU POWINNA BYĆ 1 SEKCJA "ABOUT"-->
-
 <section class="section how-its-made background-box" id="how-its-made">
   <div class="container how-its-made__container">
     <div class="how-its-made__container how-its-made__container--center">
-      <h2 class="how-its-made__title">Tradition and love</h2>
-      <h2 class="how-its-made__title how-its-made__title--ubig">How it's made?</h2>
+      <h2 class="how-its-made__title">Tradition and love<span class="how-its-made__title--ubig">How it's made?</span>
+      </h2>
       <div class="how-its-made__section">
-        <!-- <picture>
-                <source media="(min-width: 1280px)" srcset="./images/cow-pic@1x.png" />
-                <source media="(min-width: 768px)" srcset="./images/cow-pic@2x.png" />
-                <source media="(min-width: 320px)" srcset="./images/cow-pic@3x.png" />
-                <img src="./images/cow-pic@1x.png" class="how-its-made__cow" alt="cow picture" />
-            </picture> -->
-        <img
-          srcset="
+        <img srcset="
             ./images/cow-pic-mb@1x.png  280w,
             ./images/cow-pic-mb@2x.png  560w,
             ./images/cow-pic-tb@1x.png  340w,
             ./images/cow-pic-tb@2x.png  680w,
             ./images/cow-pic-dt@1x.png  516w,
             ./images/cow-pic-dt@2x.png 1032w
-          "
-          src="./images/cow-pic-dt@1x.png"
-          sizes="(min-width: 1280px) 516px, (min-width: 768px) 340px, (min-width: 320px) 280px, 100vw"
-          min-width="270"
-          alt="cow pic"
-          class="how-its-made__cow"
-        />
+          " src="./images/cow-pic-dt@1x.png"
+          sizes="(min-width: 1280px) 516px, (min-width: 768px) 340px, (min-width: 320px) 280px, 100vw" min-width="270"
+          alt="cow pic" class="how-its-made__cow" />
         <div class="how-its-made__text-box">
           <ul class="how-its-made__text-list">
             <li class="how-its-made__text-item how-its-made__text-item--lower">
@@ -44,9 +31,7 @@
               <p>Aliquam erat volutpat. Aenean accumsan.</p>
             </li>
             <li>
-              <button
-                class="button button__white button__section button__section--medium how-its-made__button"
-              >
+              <button class="button button__white button__section button__section--medium how-its-made__button">
                 <span class="button__span--arrow">Read more</span>
                 <svg width="8" height="10" viewBox="0 0 24 24">
                   <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
@@ -57,98 +42,4 @@
         </div>
       </div>
     </div>
-
-    <!-- TU POWINNA BYĆ 2 SEKCJA "ADVANTAGES"
-      
-      sekcję tą wstawiam w komentarz, aby się nie dublowała na stronie z partials advantages
-
-    <div class="how-its-made__icon-box">
-      <ul class="how-its-made__icon-list">
-        <li>
-          <ul class="how-its-made__small-list">
-            <li>
-              <img
-                src="./images/milk.png"
-                height="50px"
-                width="33px"
-                class="how-its-made__small-icon"
-              />
-            </li>
-            <li class="how-its-made__small-numbers">721</li>
-            <li class="how-its-made__small-text">
-              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <ul class="how-its-made__small-list">
-            <li>
-              <img
-                src="./images/fruit.png"
-                height="50px"
-                width="50px"
-                class="how-its-made__small-icon"
-              />
-            </li>
-            <li class="how-its-made__small-numbers">16kg</li>
-            <li class="how-its-made__small-text">
-              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <ul class="how-its-made__small-list">
-            <li>
-              <img
-                src="./images/heart.png"
-                height="50px"
-                width="44px"
-                class="how-its-made__small-icon"
-              />
-            </li>
-            <li class="how-its-made__small-numbers">84</li>
-            <li class="how-its-made__small-text">
-              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-
- 
-
-  TU POWINNA BYĆ 3 SEKCJA "GALLERY"
-
-
-  sekcję tą wstawiam w komentarz i kopiuję do partials gallery aby  nie dublowała się na stronie z partials collage  
-
-   <div class="how-its-made__mockup"></div>
-  <div class="how-its-made__picture">
-    <picture>
-            <source media="(min-width: 1280px)" srcset="./images/pic-collage@1x.png" />
-            <source media="(min-width: 768px)" srcset="./images/pic-collage@2x.png" />
-            <source media="(min-width: 320px)" srcset="./images/pic-collage@3x.png" />
-            <img src="./images/pic-collage@1x.png" class="how-its-made__collage" alt="collage picture" />
-        </picture>
-
-    <img
-      srcset="
-        ./images/pic-collage-mb@1x.png  320w,
-        ./images/pic-collage-mb@2x.png  640w,
-        ./images/pic-collage-tb@1x.png  768w,
-        ./images/pic-collage-tb@2x.png 1536w,
-        ./images/pic-collage-dt@1x.png 1280w,
-        ./images/pic-collage-dt@2x.png 2560w
-      "
-      src="./images/pic-collage-dt@1x.png"
-      sizes="(min-width: 1280px) 1280, (min-width: 768px) 768px, (min-width: 320px) 320px, 100vw"
-      min-width="280"
-      alt="collage picture"
-      class="how-its-made__collage"
-    />
-  </div>
-
--->
-  <script src="./index.js" type="module"></script>
 </section>
