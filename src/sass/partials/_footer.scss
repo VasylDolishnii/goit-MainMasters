@@ -136,18 +136,25 @@
     }
   }
 
+  &__icon-hover {
+    fill: $socialMediaColor;
+    transition: fill 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   &__icon {
     width: 32px;
     height: 32px;
+
+    :hover,
+    :focus {
+      fill: $IIIColor;
+    }
+
 
     @media screen and (min-width: 768px) {
       width: 34px;
       height: 34px;
     }
-  }
-
-  &__icon:hover {
-    fill: $btnHoverIIColor;
   }
 
   &__container--modifier {
@@ -156,10 +163,11 @@
       justify-content: space-between;
     }
   }
-}
 
-.footer__copyrights br {
-  @media screen and (min-width: 768px) {
-    display: none;
+
+  .footer__copyrights br {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 }
