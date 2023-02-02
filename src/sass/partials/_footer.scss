@@ -77,6 +77,12 @@
     gap: 28px;
     justify-content: end;
 
+    a:hover {
+      svg {
+        fill: red;
+      }
+    }
+
     @media screen and (min-width: 1280px) {
       margin-bottom: 50px;
     }
@@ -139,6 +145,7 @@
   &__icon {
     width: 32px;
     height: 32px;
+    fill: $socialMediaColor;
 
     @media screen and (min-width: 768px) {
       width: 34px;
