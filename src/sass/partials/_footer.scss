@@ -19,6 +19,16 @@
     }
   }
 
+  &__icon {
+    transition-duration: 250ms;
+
+    &:hover,
+    &:focus {
+      fill: $btnColor;
+      transform: translateY(-3px);
+    }
+  }
+
   &__container hr {
     border: none;
     border-top: 1px solid $lineColor;
@@ -77,15 +87,27 @@
     gap: 28px;
     justify-content: end;
 
-
     @media screen and (min-width: 1280px) {
       margin-bottom: 50px;
     }
   }
 
-  &__contact {
-    text-align: end;
-    margin-bottom: 23px;
+  &__contact--phone {
+    display: inline-block;
+    color: $IIIColor;
+    font-family: $fontPrimary;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.86;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
 
   &__contact--text {
@@ -103,19 +125,12 @@
     }
   }
 
-  &__contact--phone {
-    color: $IIIColor;
-    font-family: $fontPrimary;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1.86;
+  &__contact {
+    text-align: end;
+    margin-bottom: 23px;
 
-    @media screen and (min-width: 768px) {
-      font-size: 14px;
-    }
-
-    @media screen and (min-width: 1280px) {
-      font-size: 16px;
+    &:hover .footer__contact--phone {
+      transform: scale(1.2) translateX(13px);
     }
   }
 
@@ -127,6 +142,11 @@
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      transform: scale(1.3);
+    }
 
     @media screen and (min-width: 768px) {
       padding-top: 9px;
