@@ -77,7 +77,6 @@
     gap: 28px;
     justify-content: end;
 
-
     @media screen and (min-width: 1280px) {
       margin-bottom: 50px;
     }
@@ -127,13 +126,17 @@
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
+    width: 150px;
+    margin: 0 auto;
 
     @media screen and (min-width: 768px) {
       padding-top: 9px;
+      width: 100%;
     }
 
     @media screen and (min-width: 1280px) {
       padding: 10px;
+      width: 100%;
     }
   }
 
