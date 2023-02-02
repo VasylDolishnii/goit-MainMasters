@@ -100,10 +100,6 @@
   }
 }
 
-.collage {
-  transform: translateY(50%);
-}
-
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .milkbackground {
     background-image: url(/src/images/milk-1200@2.png);
