@@ -75,10 +75,10 @@
     background-image: url(../images/ice-cream_tablet.png);
     position: absolute;
     background-repeat: no-repeat;
-    height: 336px;
-    width: 100vw;
+    background-position-x: 60%;
+    height: 70vh;
+    width: 100%;
     top: -25px;
-    left: 378px;
     content: '';
     z-index: 3;
   }
@@ -86,11 +86,11 @@
     background-image: url(../images/background-circle_tablet.png);
     position: absolute;
     background-size: 324px 322px;
+    background-position-x: 60%;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100vw;
+    height: 70vh;
+    width: 100%;
     top: -42px;
-    left: 307px;
     content: '';
     z-index: 2;
   }
@@ -209,10 +209,10 @@
     position: absolute;
     background-size: 236px 557px;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100vw;
+    background-position-x: 60%;
+    height: 70vh;
+    width: 100%;
     top: 23px;
-    left: 594px;
     content: '';
     z-index: 3;
   }
@@ -221,10 +221,10 @@
     position: absolute;
     background-size: 538px 538px;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100vw;
+    background-position-x: 60%;
+    height: 70vh;
+    width: 100%;
     top: -25px;
-    left: 475px;
     content: '';
     z-index: 2;
   }
