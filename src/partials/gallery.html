@@ -1,0 +1,27 @@
+<section>
+  <div class="how-its-made__picture">
+    <!-- <picture>
+            <source media="(min-width: 1280px)" srcset="./images/pic-collage@1x.png" />
+            <source media="(min-width: 768px)" srcset="./images/pic-collage@2x.png" />
+            <source media="(min-width: 320px)" srcset="./images/pic-collage@3x.png" />
+            <img src="./images/pic-collage@1x.png" class="how-its-made__collage" alt="collage picture" />
+        </picture> -->
+
+    <img
+      class="collage"
+      srcset="
+        ./images/pic-collage-mb@1x.png  320w,
+        ./images/pic-collage-mb@2x.png  640w,
+        ./images/pic-collage-tb@1x.png  768w,
+        ./images/pic-collage-tb@2x.png 1536w,
+        ./images/pic-collage-dt@1x.png 1280w,
+        ./images/pic-collage-dt@2x.png 2560w
+      "
+      src="./images/pic-collage-dt@1x.png"
+      sizes="(min-width: 1280px) 1280, (min-width: 768px) 768px, (min-width: 320px) 320px, 100vw"
+      min-width="280"
+      alt="collage picture"
+    />
+  </div>
+  <script src="./index.js" type="module"></script>
+</section>

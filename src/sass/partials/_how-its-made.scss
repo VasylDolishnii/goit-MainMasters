@@ -105,7 +105,7 @@
     line-height: 1.7;
     max-width: 230px;
   }
-
+  /* === wstawione do partials collage 
   &__collage {
     height: 122px;
     width: 364px;
@@ -114,6 +114,7 @@
     margin: 0 auto;
     margin-bottom: 111px;
   }
+  === */
 
   /*
   &__picture {
@@ -226,12 +227,13 @@
     &__small-text {
       font-size: 14px;
     }
-
+    /* wstawione do partials gallery
     &__collage {
       margin-bottom: 236px;
       width: 786px;
       height: 264px;
     }
+    */
   }
 }
 
@@ -309,12 +311,12 @@
       font-size: 14px;
       line-height: 1.8;
     }
-
+    /* wstawione do partials collage
     &__collage {
       margin-bottom: 339px;
       width: 1280px;
       height: 430px;
-    }
+    } */
   }
 }
 
@@ -331,7 +333,7 @@
   }
 }
 
-/* Bottom margin fix for collage */
+/* Bottom margin fix for collage 
 
 .section {
   margin-bottom: 80px;
@@ -347,6 +349,8 @@
     padding-bottom: 0;
   }
 }
+
+*/
 
 /*
 .how-its-made__mockup {
