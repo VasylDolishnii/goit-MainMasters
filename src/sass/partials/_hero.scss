@@ -190,6 +190,10 @@
     top: 260px;
     left: 154px;
   }
+  .hero__button-arrow:hover,
+  .hero__button-arrow:focus {
+    cursor: pointer;
+  }
 }
 
 //desktop
@@ -327,5 +331,9 @@
     position: absolute;
     top: 496px;
     left: 295px;
+  }
+  .hero__button-arrow:hover,
+  .hero__button-arrow:focus {
+    cursor: pointer;
   }
 }
