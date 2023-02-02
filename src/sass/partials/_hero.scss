@@ -79,7 +79,7 @@
     background-repeat: no-repeat;
     background-position-x: 60%;
     height: 70vh;
-    width: 100%;
+    width: 95%;
     top: -25px;
     content: '';
     z-index: 3;
@@ -91,7 +91,7 @@
     background-position-x: 60%;
     background-repeat: no-repeat;
     height: 70vh;
-    width: 100%;
+    width: 97%;
     top: -42px;
     content: '';
     z-index: 2;
@@ -220,7 +220,7 @@
     background-repeat: no-repeat;
     background-position-x: 60%;
     height: 70vh;
-    width: 100%;
+    width: 95%;
     top: 23px;
     content: '';
     z-index: 3;
@@ -232,7 +232,7 @@
     background-repeat: no-repeat;
     background-position-x: 60%;
     height: 70vh;
-    width: 100%;
+    width: 97%;
     top: -25px;
     content: '';
     z-index: 2;
@@ -258,6 +258,7 @@
     font-family: $fontSecondary;
     text-align: left;
     color: $IColor;
+    font-weight: 400;
   }
   .hero__slogan-span {
     font-family: $fontSecondary;
