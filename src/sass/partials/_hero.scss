@@ -192,10 +192,12 @@
     top: 260px;
     left: 154px;
     z-index: 5;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .hero__button-arrow:hover,
   .hero__button-arrow:focus {
     cursor: pointer;
+    transform: rotate(90deg) scale(1.5);
   }
 }
 

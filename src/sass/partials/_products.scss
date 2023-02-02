@@ -36,6 +36,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+    &:hover {
+      box-shadow: 0 5px 15px rgb(144 35 62 / 63%);
+
+      .products {
+        &__button {
+          box-shadow: 0 5px 15px rgb(144 35 62 / 63%);
+        }
+
+        &__name,
+        &__description {
+          transform: scale(1.2);
+        }
+      }
+    }
 
     &--yellow {
       background-color: $IIBgColor;
@@ -72,6 +88,7 @@
     font-size: 20px;
     text-transform: uppercase;
     margin-top: 161px;
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__name::after {
@@ -91,6 +108,7 @@
     text-align: center;
     margin: 30px 40px 30px 40px;
     font-weight: 700;
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__button {
