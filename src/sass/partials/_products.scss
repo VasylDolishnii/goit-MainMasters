@@ -6,13 +6,15 @@
     font-size: 34px;
     text-align: center;
     text-transform: uppercase;
+    display: block;
+    margin-top: 15px;
   }
 
   &__label {
     color: $IVColor;
     font-size: 18px;
     margin-top: 121px;
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
     display: block;
     text-align: center;
     text-transform: uppercase;
