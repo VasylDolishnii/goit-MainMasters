@@ -39,6 +39,7 @@
   &__headline {
     text-transform: uppercase;
     width: 234px;
+    font-weight: inherit;
 
     @media screen and (min-width: 768px) {
       width: 340px;
@@ -130,7 +131,7 @@
     margin-bottom: 23px;
 
     &:hover .footer__contact--phone {
-      transform: scale(1.2) translateX(13px);
+      transform: scale(1.15) translateX(5px);
     }
   }
 
