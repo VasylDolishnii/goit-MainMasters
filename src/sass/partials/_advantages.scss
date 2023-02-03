@@ -88,14 +88,14 @@
     max-width: 230px;
   }
 
-  &__collage {
-    height: 122px;
-    width: 364px;
-    left: 0;
-    transform: translateY(60%);
-    margin: 0 auto;
-    margin-bottom: 111px;
-  }
+  // &__collage {
+  //   height: 122px;
+  //   width: 364px;
+  //   left: 0;
+  //   transform: translateY(60%);
+  //   margin: 0 auto;
+  //   margin-bottom: 111px;
+  // }
 
 }
 
@@ -211,16 +211,16 @@
 /* Bottom margin fix for collage */
 
 .adv-section {
-  margin-bottom: 80px;
+  margin-bottom: 78px;
   padding-bottom: 145px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 121px;
+    margin-bottom: 80px;
     padding-bottom: 242px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: 123px;
+    // margin-bottom: 123px;
     padding-bottom: 310px;
   }
 }
