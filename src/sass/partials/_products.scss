@@ -8,11 +8,13 @@
     text-transform: uppercase;
     display: block;
     margin-top: 15px;
+    font-weight: inherit;
   }
 
   &__label {
     color: $IVColor;
     font-size: 18px;
+    font-weight: inherit;
     margin-top: 121px;
     // margin-bottom: 15px;
     display: block;
@@ -88,6 +90,7 @@
   &__name {
     color: $IColor;
     font-size: 20px;
+    font-weight: inherit;
     text-transform: uppercase;
     margin-top: 161px;
     transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
