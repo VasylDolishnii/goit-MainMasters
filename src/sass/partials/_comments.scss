@@ -4,6 +4,10 @@
   align-items: center;
   padding: 43px 0;
 
+  &__title {
+    display: none;
+  }
+
   &--swiper {
     display: flex;
     flex-direction: column;
